@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/scotronics/!svn/ver/6/trunk/scotronics/mac_include
+END
+GLGeometryTransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLGeometryTransform.h
+END
+GLTriangleBatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLTriangleBatch.h
+END
+StopWatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/StopWatch.h
+END
+GLFrame.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLFrame.h
+END
+GLMatrixStack.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLMatrixStack.h
+END
+GLBatchBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLBatchBase.h
+END
+math3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/math3d.h
+END
+GLTools.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLTools.h
+END
+GLBatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLBatch.h
+END
+GLShaderManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLShaderManager.h
+END
+GLFrustum.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/scotronics/!svn/ver/3/trunk/scotronics/mac_include/GLFrustum.h
+END

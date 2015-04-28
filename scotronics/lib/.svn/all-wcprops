@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/scotronics/!svn/ver/2/trunk/scotronics/lib
+END
+GLFWDLL.lib
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/scotronics/!svn/ver/2/trunk/scotronics/lib/GLFWDLL.lib
+END
+GLFW.lib
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/scotronics/!svn/ver/2/trunk/scotronics/lib/GLFW.lib
+END
+glut32.lib
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scotronics/!svn/ver/2/trunk/scotronics/lib/glut32.lib
+END
+glew32.lib
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scotronics/!svn/ver/2/trunk/scotronics/lib/glew32.lib
+END
+glew32mx.lib
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/scotronics/!svn/ver/2/trunk/scotronics/lib/glew32mx.lib
+END

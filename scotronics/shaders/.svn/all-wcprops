@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders
+END
+clouds.vs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/clouds.vs
+END
+simple.vs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/simple.vs
+END
+terrain_grid.fs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/terrain_grid.fs
+END
+billboard.vs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/20/trunk/scotronics/shaders/billboard.vs
+END
+advWater.fs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/advWater.fs
+END
+model.vs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/model.vs
+END
+modelA.vs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/modelA.vs
+END
+water.fs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/water.fs
+END
+terrain_tex.fs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/scotronics/!svn/ver/20/trunk/scotronics/shaders/terrain_tex.fs
+END
+Sprite.vs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/Sprite.vs
+END
+sky.vs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/sky.vs
+END
+terrain_grid.vs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/terrain_grid.vs
+END
+clouds.fs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/clouds.fs
+END
+simple.fs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/simple.fs
+END
+billboard.fs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/20/trunk/scotronics/shaders/billboard.fs
+END
+advWater.vs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/advWater.vs
+END
+model.fs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/20/trunk/scotronics/shaders/model.fs
+END
+modelA.fs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/modelA.fs
+END
+water.vs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/water.vs
+END
+terrain_tex.vs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/terrain_tex.vs
+END
+sky.fs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/sky.fs
+END
+Sprite.fs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/Sprite.fs
+END

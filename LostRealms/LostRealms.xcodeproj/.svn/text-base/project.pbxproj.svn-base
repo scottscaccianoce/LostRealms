@@ -1,0 +1,1622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		78134F3F158A341E00CE6566 /* grass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78134F3E158A341E00CE6566 /* grass.tga */; };
+		78134FFB158AEB6E00CE6566 /* blendmap.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78134FFA158AEB6E00CE6566 /* blendmap.tga */; };
+		78135299158B84A900CE6566 /* dirt.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78135296158B84A900CE6566 /* dirt.tga */; };
+		7813529A158B84A900CE6566 /* rock.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78135297158B84A900CE6566 /* rock.tga */; };
+		7813529B158B84A900CE6566 /* snow.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78135298158B84A900CE6566 /* snow.tga */; };
+		7813550B158E583200CE6566 /* blendmap64.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7813550A158E583200CE6566 /* blendmap64.tga */; };
+		7834872B16A3DBBE00AF66C9 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834872A16A3DBBE00AF66C9 /* libGLTools.a */; };
+		783487CF16A3DC5F00AF66C9 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834873D16A3DC5F00AF66C9 /* app.cpp */; };
+		783487D016A3DC5F00AF66C9 /* glew32.dll in Resources */ = {isa = PBXBuildFile; fileRef = 7834874016A3DC5F00AF66C9 /* glew32.dll */; };
+		783487D116A3DC5F00AF66C9 /* glew32mx.dll in Resources */ = {isa = PBXBuildFile; fileRef = 7834874116A3DC5F00AF66C9 /* glew32mx.dll */; };
+		783487D216A3DC5F00AF66C9 /* GLFW.dll in Resources */ = {isa = PBXBuildFile; fileRef = 7834874216A3DC5F00AF66C9 /* GLFW.dll */; };
+		783487D316A3DC5F00AF66C9 /* glu32.dll in Resources */ = {isa = PBXBuildFile; fileRef = 7834874316A3DC5F00AF66C9 /* glu32.dll */; };
+		783487D416A3DC5F00AF66C9 /* glut32.dll in Resources */ = {isa = PBXBuildFile; fileRef = 7834874416A3DC5F00AF66C9 /* glut32.dll */; };
+		783487D516A3DC5F00AF66C9 /* blank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834874516A3DC5F00AF66C9 /* blank.cpp */; };
+		783487D616A3DC5F00AF66C9 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834874716A3DC5F00AF66C9 /* Camera.cpp */; };
+		783487D716A3DC5F00AF66C9 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834874A16A3DC5F00AF66C9 /* Database.cpp */; };
+		783487D816A3DC5F00AF66C9 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 7834874C16A3DC5F00AF66C9 /* sqlite3.c */; };
+		783487D916A3DC5F00AF66C9 /* DayNight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834874E16A3DC5F00AF66C9 /* DayNight.cpp */; };
+		783487DA16A3DC5F00AF66C9 /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875016A3DC5F00AF66C9 /* font.cpp */; };
+		783487DB16A3DC5F00AF66C9 /* Frustum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875216A3DC5F00AF66C9 /* Frustum.cpp */; };
+		783487DC16A3DC5F00AF66C9 /* UIBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875516A3DC5F00AF66C9 /* UIBar.cpp */; };
+		783487DD16A3DC5F00AF66C9 /* UIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875716A3DC5F00AF66C9 /* UIButton.cpp */; };
+		783487DE16A3DC5F00AF66C9 /* UICanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875916A3DC5F00AF66C9 /* UICanvas.cpp */; };
+		783487DF16A3DC5F00AF66C9 /* UICheckbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875B16A3DC5F00AF66C9 /* UICheckbox.cpp */; };
+		783487E016A3DC5F00AF66C9 /* UIImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875D16A3DC5F00AF66C9 /* UIImage.cpp */; };
+		783487E116A3DC5F00AF66C9 /* UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834875F16A3DC5F00AF66C9 /* UILabel.cpp */; };
+		783487E216A3DC5F00AF66C9 /* UIListbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834876116A3DC5F00AF66C9 /* UIListbox.cpp */; };
+		783487E316A3DC5F00AF66C9 /* UISlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834876316A3DC5F00AF66C9 /* UISlider.cpp */; };
+		783487E416A3DC5F00AF66C9 /* UIStepSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834876516A3DC5F00AF66C9 /* UIStepSlider.cpp */; };
+		783487E516A3DC5F00AF66C9 /* UITextbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834876716A3DC5F00AF66C9 /* UITextbox.cpp */; };
+		783487E616A3DC5F00AF66C9 /* UIWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834876916A3DC5F00AF66C9 /* UIWidget.cpp */; };
+		783487E716A3DC5F00AF66C9 /* UIWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834876B16A3DC5F00AF66C9 /* UIWindow.cpp */; };
+		783487ED16A3DC5F00AF66C9 /* libenet.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834879616A3DC5F00AF66C9 /* libenet.2.dylib */; };
+		783487EE16A3DC5F00AF66C9 /* libenet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834879716A3DC5F00AF66C9 /* libenet.a */; };
+		783487EF16A3DC5F00AF66C9 /* libenet.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834879816A3DC5F00AF66C9 /* libenet.dylib */; };
+		783487F016A3DC5F00AF66C9 /* libenet.la in Resources */ = {isa = PBXBuildFile; fileRef = 7834879916A3DC5F00AF66C9 /* libenet.la */; };
+		783487F116A3DC5F00AF66C9 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834879A16A3DC5F00AF66C9 /* libglfw.a */; };
+		783487F216A3DC5F00AF66C9 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834879B16A3DC5F00AF66C9 /* libGLTools.a */; };
+		783487F316A3DC5F00AF66C9 /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834879C16A3DC5F00AF66C9 /* math3d.cpp */; };
+		783487F416A3DC5F00AF66C9 /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834879E16A3DC5F00AF66C9 /* Network.cpp */; };
+		783487F516A3DC5F00AF66C9 /* particle_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487A016A3DC5F00AF66C9 /* particle_system.cpp */; };
+		783487F616A3DC5F00AF66C9 /* quadterrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487A216A3DC5F00AF66C9 /* quadterrain.cpp */; };
+		783487F716A3DC5F00AF66C9 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487A416A3DC5F00AF66C9 /* shader.cpp */; };
+		783487F816A3DC5F00AF66C9 /* advWater.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487A716A3DC5F00AF66C9 /* advWater.fs */; };
+		783487F916A3DC5F00AF66C9 /* advWater.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487A816A3DC5F00AF66C9 /* advWater.vs */; };
+		783487FA16A3DC5F00AF66C9 /* clouds.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487A916A3DC5F00AF66C9 /* clouds.fs */; };
+		783487FB16A3DC5F00AF66C9 /* clouds.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487AA16A3DC5F00AF66C9 /* clouds.vs */; };
+		783487FC16A3DC5F00AF66C9 /* model.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487AB16A3DC5F00AF66C9 /* model.fs */; };
+		783487FD16A3DC5F00AF66C9 /* model.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487AC16A3DC5F00AF66C9 /* model.vs */; };
+		783487FE16A3DC5F00AF66C9 /* modelA.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487AD16A3DC5F00AF66C9 /* modelA.fs */; };
+		783487FF16A3DC5F00AF66C9 /* modelA.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487AE16A3DC5F00AF66C9 /* modelA.vs */; };
+		7834880016A3DC5F00AF66C9 /* Sphere.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B016A3DC5F00AF66C9 /* Sphere.fs */; };
+		7834880116A3DC5F00AF66C9 /* Sphere.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B116A3DC5F00AF66C9 /* Sphere.vs */; };
+		7834880216A3DC5F00AF66C9 /* vertical.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B216A3DC5F00AF66C9 /* vertical.vs */; };
+		7834880316A3DC5F00AF66C9 /* simple.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B316A3DC5F00AF66C9 /* simple.fs */; };
+		7834880416A3DC5F00AF66C9 /* simple.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B416A3DC5F00AF66C9 /* simple.vs */; };
+		7834880516A3DC5F00AF66C9 /* sky.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B516A3DC5F00AF66C9 /* sky.fs */; };
+		7834880616A3DC5F00AF66C9 /* sky.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B616A3DC5F00AF66C9 /* sky.vs */; };
+		7834880716A3DC5F00AF66C9 /* Sprite.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B716A3DC5F00AF66C9 /* Sprite.fs */; };
+		7834880816A3DC5F00AF66C9 /* Sprite.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B816A3DC5F00AF66C9 /* Sprite.vs */; };
+		7834880916A3DC5F00AF66C9 /* terrain_grid.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487B916A3DC5F00AF66C9 /* terrain_grid.fs */; };
+		7834880A16A3DC5F00AF66C9 /* terrain_grid.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487BA16A3DC5F00AF66C9 /* terrain_grid.vs */; };
+		7834880B16A3DC5F00AF66C9 /* terrain_tex.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487BB16A3DC5F00AF66C9 /* terrain_tex.fs */; };
+		7834880C16A3DC5F00AF66C9 /* terrain_tex.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487BC16A3DC5F00AF66C9 /* terrain_tex.vs */; };
+		7834880D16A3DC5F00AF66C9 /* water.fs in Resources */ = {isa = PBXBuildFile; fileRef = 783487BD16A3DC5F00AF66C9 /* water.fs */; };
+		7834880E16A3DC5F00AF66C9 /* water.vs in Resources */ = {isa = PBXBuildFile; fileRef = 783487BE16A3DC5F00AF66C9 /* water.vs */; };
+		7834880F16A3DC5F00AF66C9 /* skyplane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487BF16A3DC5F00AF66C9 /* skyplane.cpp */; };
+		7834881016A3DC5F00AF66C9 /* SPEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487C116A3DC5F00AF66C9 /* SPEntity.cpp */; };
+		7834881116A3DC5F00AF66C9 /* spMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487C316A3DC5F00AF66C9 /* spMesh.cpp */; };
+		7834881216A3DC5F00AF66C9 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487C516A3DC5F00AF66C9 /* Sprite.cpp */; };
+		7834881316A3DC5F00AF66C9 /* terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487C716A3DC5F00AF66C9 /* terrain.cpp */; };
+		7834881416A3DC5F00AF66C9 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487C916A3DC5F00AF66C9 /* texture.cpp */; };
+		7834881516A3DC5F00AF66C9 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487CB16A3DC5F00AF66C9 /* util.cpp */; };
+		7834881616A3DC5F00AF66C9 /* Water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783487CD16A3DC5F00AF66C9 /* Water.cpp */; };
+		783A0CBD1503D78400A2272F /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783A0CBC1503D78400A2272F /* game.cpp */; };
+		783A0CDF1503DA8C00A2272F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783A0CDE1503DA8C00A2272F /* GLUT.framework */; };
+		784FC63C15A731E4003B30F3 /* world.icns in Resources */ = {isa = PBXBuildFile; fileRef = 784FC63B15A731E4003B30F3 /* world.icns */; };
+		78502E6A16A5C0DA006FD81B /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78502E6916A5C0DA006FD81B /* libglfw.a */; };
+		785FB3AA1591063B00C39F0F /* rock2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FB3A91591063B00C39F0F /* rock2.tga */; };
+		785FBFE815961D2500C39F0F /* blendmap128.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FBFE715961D2500C39F0F /* blendmap128.tga */; };
+		785FC14F1596826200C39F0F /* wave0.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FC14D1596826200C39F0F /* wave0.tga */; };
+		785FC1501596826200C39F0F /* wave1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FC14E1596826200C39F0F /* wave1.tga */; };
+		785FC6141598BC9600C39F0F /* waterNormalMap1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FC6121598BC9600C39F0F /* waterNormalMap1.tga */; };
+		785FC6151598BC9600C39F0F /* waterNormalMap2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FC6131598BC9600C39F0F /* waterNormalMap2.tga */; };
+		785FCEDF159D669400C39F0F /* sand.tga in Resources */ = {isa = PBXBuildFile; fileRef = 785FCEDE159D669400C39F0F /* sand.tga */; };
+		7888723316B6DF870033DD03 /* bridge.spm in Resources */ = {isa = PBXBuildFile; fileRef = 7888723216B6DF870033DD03 /* bridge.spm */; };
+		7888762C16BC29620033DD03 /* powersong.spm in Resources */ = {isa = PBXBuildFile; fileRef = 7888762B16BC29620033DD03 /* powersong.spm */; };
+		788876D116BD79FB0033DD03 /* speedsong.spm in Resources */ = {isa = PBXBuildFile; fileRef = 788876D016BD79FB0033DD03 /* speedsong.spm */; };
+		788876FF16BD7D480033DD03 /* ring_particle.tga in Resources */ = {isa = PBXBuildFile; fileRef = 788876FE16BD7D480033DD03 /* ring_particle.tga */; };
+		7888770816BD804A0033DD03 /* billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7888770616BD804A0033DD03 /* billboard.cpp */; };
+		7888771F16BD8E810033DD03 /* billboard.fs in Resources */ = {isa = PBXBuildFile; fileRef = 7888771D16BD8E810033DD03 /* billboard.fs */; };
+		7888772016BD8E810033DD03 /* billboard.vs in Resources */ = {isa = PBXBuildFile; fileRef = 7888771E16BD8E810033DD03 /* billboard.vs */; };
+		7888789816BDF5E60033DD03 /* red_ring.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888789716BDF5E60033DD03 /* red_ring.tga */; };
+		78887A3C16BE41150033DD03 /* stunspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78887A3B16BE41150033DD03 /* stunspell.tga */; };
+		78887AA016BE46DF0033DD03 /* mezspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78887A9F16BE46DF0033DD03 /* mezspell.tga */; };
+		78887EC116BEFCCD0033DD03 /* groupdefensespell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78887EBF16BEFCCD0033DD03 /* groupdefensespell.tga */; };
+		78887EC216BEFCCD0033DD03 /* tauntspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78887EC016BEFCCD0033DD03 /* tauntspell.tga */; };
+		78887F4616BF035A0033DD03 /* wingsspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78887F4516BF035A0033DD03 /* wingsspell.tga */; };
+		78887FE016C00B800033DD03 /* blessingspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78887FDF16C00B800033DD03 /* blessingspell.tga */; };
+		7888804716C0158E0033DD03 /* defensebuffSpell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888804516C0158E0033DD03 /* defensebuffSpell.tga */; };
+		7888804816C0158E0033DD03 /* healchantSpell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888804616C0158E0033DD03 /* healchantSpell.tga */; };
+		7888807616C0B50A0033DD03 /* ddspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888807516C0B50A0033DD03 /* ddspell.tga */; };
+		788880A116C0BB940033DD03 /* bardmez.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888809F16C0BB940033DD03 /* bardmez.tga */; };
+		788880A216C0BB940033DD03 /* bardstun.tga in Resources */ = {isa = PBXBuildFile; fileRef = 788880A016C0BB940033DD03 /* bardstun.tga */; };
+		788880D616C0C2680033DD03 /* firebolt.spm in Resources */ = {isa = PBXBuildFile; fileRef = 788880D416C0C2680033DD03 /* firebolt.spm */; };
+		788880D716C0C2680033DD03 /* icebolt.spm in Resources */ = {isa = PBXBuildFile; fileRef = 788880D516C0C2680033DD03 /* icebolt.spm */; };
+		7888814116C16B6E0033DD03 /* assassinspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888813D16C16B6E0033DD03 /* assassinspell.tga */; };
+		7888814216C16B6E0033DD03 /* fire_masteryspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888813E16C16B6E0033DD03 /* fire_masteryspell.tga */; };
+		7888814316C16B6E0033DD03 /* frost_masteryspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888813F16C16B6E0033DD03 /* frost_masteryspell.tga */; };
+		7888814416C16B6E0033DD03 /* rockspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888814016C16B6E0033DD03 /* rockspell.tga */; };
+		788881AE16C1720C0033DD03 /* infernospell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 788881AD16C1720C0033DD03 /* infernospell.tga */; };
+		788881EA16C20F970033DD03 /* icespell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 788881E916C20F970033DD03 /* icespell.tga */; };
+		7888821A16C2177E0033DD03 /* lifetap.spm in Resources */ = {isa = PBXBuildFile; fileRef = 7888821916C2177E0033DD03 /* lifetap.spm */; };
+		7888827B16C21C960033DD03 /* tranfusespell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888827A16C21C960033DD03 /* tranfusespell.tga */; };
+		788882C016C21FC70033DD03 /* HealCircle.tga in Resources */ = {isa = PBXBuildFile; fileRef = 788882BF16C21FC70033DD03 /* HealCircle.tga */; };
+		7888836116C2268C0033DD03 /* flowerspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888835E16C2268C0033DD03 /* flowerspell.tga */; };
+		7888836216C2268C0033DD03 /* naturespell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888835F16C2268C0033DD03 /* naturespell.tga */; };
+		7888836316C2268C0033DD03 /* tornsspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888836016C2268C0033DD03 /* tornsspell.tga */; };
+		7888848816C236C60033DD03 /* cloud.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888848716C236C60033DD03 /* cloud.tga */; };
+		7888849F16C2B80D0033DD03 /* hurricanespell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888849E16C2B80D0033DD03 /* hurricanespell.tga */; };
+		7888850C16C2BFEE0033DD03 /* brown_ring.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888850B16C2BFEE0033DD03 /* brown_ring.tga */; };
+		7888858416C376B50033DD03 /* rblastspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 7888858316C376B50033DD03 /* rblastspell.tga */; };
+		788885B916C37A650033DD03 /* holyswordspell.tga in Resources */ = {isa = PBXBuildFile; fileRef = 788885B816C37A650033DD03 /* holyswordspell.tga */; };
+		7888864616C4C0DA0033DD03 /* Paladin.spm in Resources */ = {isa = PBXBuildFile; fileRef = 7888864516C4C0D90033DD03 /* Paladin.spm */; };
+		78888A6F16C764260033DD03 /* BardAttack.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78888A6B16C764260033DD03 /* BardAttack.spm */; };
+		78888A7016C764260033DD03 /* DruidAttack.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78888A6C16C764260033DD03 /* DruidAttack.spm */; };
+		78888A7116C764260033DD03 /* PallyAttack.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78888A6D16C764260033DD03 /* PallyAttack.spm */; };
+		78888A7216C764260033DD03 /* WizardAttack.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78888A6E16C764260033DD03 /* WizardAttack.spm */; };
+		78A16174159F5E4200DB45CA /* clouds.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78A16173159F5E4200DB45CA /* clouds.tga */; };
+		78C7433D15AA00280049BBF1 /* PlayersTable in Resources */ = {isa = PBXBuildFile; fileRef = 78C7433C15AA00280049BBF1 /* PlayersTable */; };
+		78C7433F15AA02730049BBF1 /* players.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 78C7433E15AA02730049BBF1 /* players.sqlite3 */; };
+		78C7435815AA04FD0049BBF1 /* CharacterScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C7435715AA04FD0049BBF1 /* CharacterScreen.cpp */; };
+		78C7436B15AA08390049BBF1 /* NewCharacterScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C7436A15AA08390049BBF1 /* NewCharacterScreen.cpp */; };
+		78C744F515AA74E80049BBF1 /* PlayScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C744F415AA74E80049BBF1 /* PlayScreen.cpp */; };
+		78DE70F1141F20DA00629158 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DE70F0141F20DA00629158 /* OpenGL.framework */; };
+		78DFE825167CF01200352E4E /* equip.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFE824167CF01200352E4E /* equip.tga */; };
+		78DFEA821680298200352E4E /* chest.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA7A1680298200352E4E /* chest.tga */; };
+		78DFEA831680298200352E4E /* feet.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA7B1680298200352E4E /* feet.tga */; };
+		78DFEA841680298200352E4E /* hand.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA7C1680298200352E4E /* hand.tga */; };
+		78DFEA851680298200352E4E /* helmet.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA7D1680298200352E4E /* helmet.tga */; };
+		78DFEA861680298200352E4E /* legs.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA7E1680298200352E4E /* legs.tga */; };
+		78DFEA871680298200352E4E /* neck.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA7F1680298200352E4E /* neck.tga */; };
+		78DFEA881680298200352E4E /* ring.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA801680298200352E4E /* ring.tga */; };
+		78DFEA891680298200352E4E /* trinket.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEA811680298200352E4E /* trinket.tga */; };
+		78DFEB63168042E100352E4E /* beer.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEB61168042E100352E4E /* beer.tga */; };
+		78DFEB64168042E100352E4E /* sword.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEB62168042E100352E4E /* sword.tga */; };
+		78DFEBFA168222AA00352E4E /* totalcompass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78DFEBF9168222AA00352E4E /* totalcompass.tga */; };
+		78E13AB21683409900D99D1F /* assassin.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A7F1683409900D99D1F /* assassin.tga */; };
+		78E13AB31683409900D99D1F /* bard.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A801683409900D99D1F /* bard.tga */; };
+		78E13AB41683409900D99D1F /* bladeturn.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A811683409900D99D1F /* bladeturn.tga */; };
+		78E13AB51683409900D99D1F /* blow.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A821683409900D99D1F /* blow.tga */; };
+		78E13AB61683409900D99D1F /* dd.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A831683409900D99D1F /* dd.tga */; };
+		78E13AB81683409900D99D1F /* mez.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A851683409900D99D1F /* mez.tga */; };
+		78E13AB91683409900D99D1F /* power.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A861683409900D99D1F /* power.tga */; };
+		78E13ABA1683409900D99D1F /* speed.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A871683409900D99D1F /* speed.tga */; };
+		78E13ABB1683409900D99D1F /* strike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A881683409900D99D1F /* strike.tga */; };
+		78E13ABC1683409900D99D1F /* stun.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A891683409900D99D1F /* stun.tga */; };
+		78E13ABE1683409900D99D1F /* Druid.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A8C1683409900D99D1F /* Druid.tga */; };
+		78E13ABF1683409900D99D1F /* druid_staff.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A8D1683409900D99D1F /* druid_staff.tga */; };
+		78E13AC01683409900D99D1F /* flower.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A8E1683409900D99D1F /* flower.tga */; };
+		78E13AC11683409900D99D1F /* group_heal.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A8F1683409900D99D1F /* group_heal.tga */; };
+		78E13AC21683409900D99D1F /* heal.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A901683409900D99D1F /* heal.tga */; };
+		78E13AC31683409900D99D1F /* healing_rain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A911683409900D99D1F /* healing_rain.tga */; };
+		78E13AC41683409900D99D1F /* lighting.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A921683409900D99D1F /* lighting.tga */; };
+		78E13AC51683409900D99D1F /* nature.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A931683409900D99D1F /* nature.tga */; };
+		78E13AC61683409900D99D1F /* torns.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A941683409900D99D1F /* torns.tga */; };
+		78E13AC71683409900D99D1F /* twister.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A951683409900D99D1F /* twister.tga */; };
+		78E13AC81683409900D99D1F /* vine.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A961683409900D99D1F /* vine.tga */; };
+		78E13AC91683409900D99D1F /* wildflower.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A971683409900D99D1F /* wildflower.tga */; };
+		78E13ACA1683409900D99D1F /* defense_buff.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A991683409900D99D1F /* defense_buff.tga */; };
+		78E13ACB1683409900D99D1F /* group_defense.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A9A1683409900D99D1F /* group_defense.tga */; };
+		78E13ACC1683409900D99D1F /* heal_chant.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A9B1683409900D99D1F /* heal_chant.tga */; };
+		78E13ACD1683409900D99D1F /* holy_power.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A9C1683409900D99D1F /* holy_power.tga */; };
+		78E13ACE1683409900D99D1F /* mace.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A9D1683409900D99D1F /* mace.tga */; };
+		78E13ACF1683409900D99D1F /* mace_Attack.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A9E1683409900D99D1F /* mace_Attack.tga */; };
+		78E13AD01683409900D99D1F /* Paladin.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13A9F1683409900D99D1F /* Paladin.tga */; };
+		78E13AD11683409900D99D1F /* rez.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA01683409900D99D1F /* rez.tga */; };
+		78E13AD21683409900D99D1F /* self_haste.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA11683409900D99D1F /* self_haste.tga */; };
+		78E13AD31683409900D99D1F /* sheild.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA21683409900D99D1F /* sheild.tga */; };
+		78E13AD41683409900D99D1F /* stun_strike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA31683409900D99D1F /* stun_strike.tga */; };
+		78E13AD51683409900D99D1F /* taunt.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA41683409900D99D1F /* taunt.tga */; };
+		78E13AD61683409900D99D1F /* fire_mastery.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA61683409900D99D1F /* fire_mastery.tga */; };
+		78E13AD71683409900D99D1F /* firebolt.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA71683409900D99D1F /* firebolt.tga */; };
+		78E13AD81683409900D99D1F /* freeze.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA81683409900D99D1F /* freeze.tga */; };
+		78E13AD91683409900D99D1F /* frost_mastery.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AA91683409900D99D1F /* frost_mastery.tga */; };
+		78E13ADA1683409900D99D1F /* ice_bolt.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AAA1683409900D99D1F /* ice_bolt.tga */; };
+		78E13ADB1683409900D99D1F /* inferno.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AAB1683409900D99D1F /* inferno.tga */; };
+		78E13ADC1683409900D99D1F /* life_steal.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AAC1683409900D99D1F /* life_steal.tga */; };
+		78E13ADE1683409900D99D1F /* staff.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AAE1683409900D99D1F /* staff.tga */; };
+		78E13ADF1683409900D99D1F /* tomb.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AAF1683409900D99D1F /* tomb.tga */; };
+		78E13AE01683409900D99D1F /* transfuse.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AB01683409900D99D1F /* transfuse.tga */; };
+		78E13AE11683409900D99D1F /* wizard.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AB11683409900D99D1F /* wizard.tga */; };
+		78E13AF31683441800D99D1F /* rock_armor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E13AF21683441800D99D1F /* rock_armor.tga */; };
+		78E1447916865A2000D99D1F /* enemy.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E1447816865A2000D99D1F /* enemy.tga */; };
+		78E1464A1686B38200D99D1F /* bard.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E146491686B38200D99D1F /* bard.spm */; };
+		78E14B041688878600D99D1F /* bird.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E14B031688878600D99D1F /* bird.spm */; };
+		78E14C20168928BF00D99D1F /* Sorceress.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E14C1F168928BF00D99D1F /* Sorceress.spm */; };
+		78E14E62168CAF1D00D99D1F /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E14E61168CAF1D00D99D1F /* inventory.cpp */; };
+		78E14E73168CB2BD00D99D1F /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E14E72168CB2BD00D99D1F /* item.cpp */; };
+		78E15290168D609900D99D1F /* loot.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78E1528F168D609900D99D1F /* loot.tga */; };
+		78E15397168DDCB000D99D1F /* equip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E15396168DDCB000D99D1F /* equip.cpp */; };
+		78E1574A168F24BA00D99D1F /* vitals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E15749168F24BA00D99D1F /* vitals.cpp */; };
+		78E15834168F946D00D99D1F /* targeting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E15833168F946D00D99D1F /* targeting.cpp */; };
+		78E15900168FFBEA00D99D1F /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E158FE168FFBEA00D99D1F /* Enemy.cpp */; };
+		78E15F041697384600D99D1F /* brown_bear_attack.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E15F021697384600D99D1F /* brown_bear_attack.spm */; };
+		78E15F051697384600D99D1F /* brown_bear.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E15F031697384600D99D1F /* brown_bear.spm */; };
+		78E161561698960F00D99D1F /* emitters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E161551698960F00D99D1F /* emitters.cpp */; };
+		78E16B9A169F067200D99D1F /* ciryon_house1.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16B99169F067200D99D1F /* ciryon_house1.spm */; };
+		78E16BB9169F06D700D99D1F /* eriador_tree.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB1169F06D700D99D1F /* eriador_tree.spm */; };
+		78E16BBA169F06D700D99D1F /* human_town1.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB2169F06D700D99D1F /* human_town1.spm */; };
+		78E16BBB169F06D700D99D1F /* human_town2.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB3169F06D700D99D1F /* human_town2.spm */; };
+		78E16BBC169F06D700D99D1F /* human_town3.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB4169F06D700D99D1F /* human_town3.spm */; };
+		78E16BBD169F06D700D99D1F /* human_town4.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB5169F06D700D99D1F /* human_town4.spm */; };
+		78E16BBE169F06D700D99D1F /* human_town5.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB6169F06D700D99D1F /* human_town5.spm */; };
+		78E16BBF169F06D700D99D1F /* human_town6.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB7169F06D700D99D1F /* human_town6.spm */; };
+		78E16BC0169F06D700D99D1F /* human_town7.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E16BB8169F06D700D99D1F /* human_town7.spm */; };
+		78E1772016A216D400D99D1F /* Druid.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E1771F16A216D400D99D1F /* Druid.spm */; };
+		78E61F6416AD04C500EBE712 /* rock1.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E61F6216AD04C500EBE712 /* rock1.spm */; };
+		78E61F6516AD04C500EBE712 /* ruins.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78E61F6316AD04C500EBE712 /* ruins.spm */; };
+		78EF77D4166DA4E6003AF90D /* PacketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78EF77D3166DA4E6003AF90D /* PacketManager.cpp */; };
+		78EF7823166DAFA2003AF90D /* ProcessPackets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78EF7822166DAFA2003AF90D /* ProcessPackets.cpp */; };
+		78EF7A49166E4F9B003AF90D /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78EF7A48166E4F9B003AF90D /* Player.cpp */; };
+		78EF7B08166FCBF6003AF90D /* Buff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78EF7B07166FCBF6003AF90D /* Buff.cpp */; };
+		78EF7B0B166FCC23003AF90D /* Spell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78EF7B0A166FCC23003AF90D /* Spell.cpp */; };
+		78EF7B23166FCD37003AF90D /* Game tables in Resources */ = {isa = PBXBuildFile; fileRef = 78EF7B22166FCD37003AF90D /* Game tables */; };
+		78EF7B25166FD00C003AF90D /* game.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 78EF7B24166FD00C003AF90D /* game.sqlite3 */; };
+		78EF80C5167454B0003AF90D /* map.quad in Resources */ = {isa = PBXBuildFile; fileRef = 78EF80C4167454B0003AF90D /* map.quad */; };
+		78EF81AD16745B84003AF90D /* cottage.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81A616745B84003AF90D /* cottage.spm */; };
+		78EF81AE16745B84003AF90D /* fortwall.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81A716745B84003AF90D /* fortwall.spm */; };
+		78EF81AF16745B84003AF90D /* town_hall.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81A816745B84003AF90D /* town_hall.spm */; };
+		78EF81B016745B84003AF90D /* tree_3.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81A916745B84003AF90D /* tree_3.spm */; };
+		78EF81B116745B84003AF90D /* tree_cluster.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81AA16745B84003AF90D /* tree_cluster.spm */; };
+		78EF81B216745B84003AF90D /* tree.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81AB16745B84003AF90D /* tree.spm */; };
+		78EF81B316745B84003AF90D /* warrior.spm in Resources */ = {isa = PBXBuildFile; fileRef = 78EF81AC16745B84003AF90D /* warrior.spm */; };
+		78EF894E1678770D003AF90D /* charscreen.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF894D1678770D003AF90D /* charscreen.tga */; };
+		78EF8F4F167CE767003AF90D /* bag.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F48167CE767003AF90D /* bag.tga */; };
+		78EF8F50167CE767003AF90D /* group.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F49167CE767003AF90D /* group.tga */; };
+		78EF8F51167CE767003AF90D /* map.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F4A167CE767003AF90D /* map.tga */; };
+		78EF8F52167CE767003AF90D /* quests.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F4B167CE767003AF90D /* quests.tga */; };
+		78EF8F53167CE767003AF90D /* settings.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F4C167CE767003AF90D /* settings.tga */; };
+		78EF8F54167CE767003AF90D /* spells.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F4D167CE767003AF90D /* spells.tga */; };
+		78EF8F55167CE767003AF90D /* stats.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EF8F4E167CE767003AF90D /* stats.tga */; };
+		78EFD733159FCAD500E6AE86 /* clouds2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 78EFD732159FCAD500E6AE86 /* clouds2.tga */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* LostRealms_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostRealms_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		78134F3E158A341E00CE6566 /* grass.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = grass.tga; sourceTree = "<group>"; };
+		78134FFA158AEB6E00CE6566 /* blendmap.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = blendmap.tga; sourceTree = "<group>"; };
+		78135296158B84A900CE6566 /* dirt.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dirt.tga; sourceTree = "<group>"; };
+		78135297158B84A900CE6566 /* rock.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rock.tga; sourceTree = "<group>"; };
+		78135298158B84A900CE6566 /* snow.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = snow.tga; sourceTree = "<group>"; };
+		7813550A158E583200CE6566 /* blendmap64.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = blendmap64.tga; sourceTree = "<group>"; };
+		7834872A16A3DBBE00AF66C9 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = ../scotronics/mac_lib/libGLTools.a; sourceTree = SOURCE_ROOT; };
+		7834873D16A3DC5F00AF66C9 /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
+		7834873E16A3DC5F00AF66C9 /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
+		7834874016A3DC5F00AF66C9 /* glew32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glew32.dll; sourceTree = "<group>"; };
+		7834874116A3DC5F00AF66C9 /* glew32mx.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glew32mx.dll; sourceTree = "<group>"; };
+		7834874216A3DC5F00AF66C9 /* GLFW.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = GLFW.dll; sourceTree = "<group>"; };
+		7834874316A3DC5F00AF66C9 /* glu32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glu32.dll; sourceTree = "<group>"; };
+		7834874416A3DC5F00AF66C9 /* glut32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glut32.dll; sourceTree = "<group>"; };
+		7834874516A3DC5F00AF66C9 /* blank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blank.cpp; sourceTree = "<group>"; };
+		7834874616A3DC5F00AF66C9 /* blank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blank.h; sourceTree = "<group>"; };
+		7834874716A3DC5F00AF66C9 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		7834874816A3DC5F00AF66C9 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		7834874A16A3DC5F00AF66C9 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Database.cpp; sourceTree = "<group>"; };
+		7834874B16A3DC5F00AF66C9 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		7834874C16A3DC5F00AF66C9 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		7834874D16A3DC5F00AF66C9 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		7834874E16A3DC5F00AF66C9 /* DayNight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DayNight.cpp; sourceTree = "<group>"; };
+		7834874F16A3DC5F00AF66C9 /* daynight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = daynight.h; sourceTree = "<group>"; };
+		7834875016A3DC5F00AF66C9 /* font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = font.cpp; sourceTree = "<group>"; };
+		7834875116A3DC5F00AF66C9 /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = font.h; sourceTree = "<group>"; };
+		7834875216A3DC5F00AF66C9 /* Frustum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Frustum.cpp; sourceTree = "<group>"; };
+		7834875316A3DC5F00AF66C9 /* Frustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frustum.h; sourceTree = "<group>"; };
+		7834875516A3DC5F00AF66C9 /* UIBar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBar.cpp; sourceTree = "<group>"; };
+		7834875616A3DC5F00AF66C9 /* UIBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBar.h; sourceTree = "<group>"; };
+		7834875716A3DC5F00AF66C9 /* UIButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIButton.cpp; sourceTree = "<group>"; };
+		7834875816A3DC5F00AF66C9 /* UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton.h; sourceTree = "<group>"; };
+		7834875916A3DC5F00AF66C9 /* UICanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UICanvas.cpp; sourceTree = "<group>"; };
+		7834875A16A3DC5F00AF66C9 /* UICanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICanvas.h; sourceTree = "<group>"; };
+		7834875B16A3DC5F00AF66C9 /* UICheckbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UICheckbox.cpp; sourceTree = "<group>"; };
+		7834875C16A3DC5F00AF66C9 /* UICheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckbox.h; sourceTree = "<group>"; };
+		7834875D16A3DC5F00AF66C9 /* UIImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIImage.cpp; sourceTree = "<group>"; };
+		7834875E16A3DC5F00AF66C9 /* UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImage.h; sourceTree = "<group>"; };
+		7834875F16A3DC5F00AF66C9 /* UILabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILabel.cpp; sourceTree = "<group>"; };
+		7834876016A3DC5F00AF66C9 /* UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabel.h; sourceTree = "<group>"; };
+		7834876116A3DC5F00AF66C9 /* UIListbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIListbox.cpp; sourceTree = "<group>"; };
+		7834876216A3DC5F00AF66C9 /* UIListbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIListbox.h; sourceTree = "<group>"; };
+		7834876316A3DC5F00AF66C9 /* UISlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UISlider.cpp; sourceTree = "<group>"; };
+		7834876416A3DC5F00AF66C9 /* UISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISlider.h; sourceTree = "<group>"; };
+		7834876516A3DC5F00AF66C9 /* UIStepSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIStepSlider.cpp; sourceTree = "<group>"; };
+		7834876616A3DC5F00AF66C9 /* UIStepSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStepSlider.h; sourceTree = "<group>"; };
+		7834876716A3DC5F00AF66C9 /* UITextbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITextbox.cpp; sourceTree = "<group>"; };
+		7834876816A3DC5F00AF66C9 /* UITextbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextbox.h; sourceTree = "<group>"; };
+		7834876916A3DC5F00AF66C9 /* UIWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIWidget.cpp; sourceTree = "<group>"; };
+		7834876A16A3DC5F00AF66C9 /* UIWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWidget.h; sourceTree = "<group>"; };
+		7834876B16A3DC5F00AF66C9 /* UIWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIWindow.cpp; sourceTree = "<group>"; };
+		7834876C16A3DC5F00AF66C9 /* UIWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindow.h; sourceTree = "<group>"; };
+		7834876F16A3DC5F00AF66C9 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		7834877016A3DC5F00AF66C9 /* glfw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw.h; sourceTree = "<group>"; };
+		7834877116A3DC5F00AF66C9 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		7834877216A3DC5F00AF66C9 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		7834877316A3DC5F00AF66C9 /* glut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glut.h; sourceTree = "<group>"; };
+		7834877516A3DC5F00AF66C9 /* glew32.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = glew32.lib; sourceTree = "<group>"; };
+		7834877616A3DC5F00AF66C9 /* glew32mx.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = glew32mx.lib; sourceTree = "<group>"; };
+		7834877716A3DC5F00AF66C9 /* GLFW.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GLFW.lib; sourceTree = "<group>"; };
+		7834877816A3DC5F00AF66C9 /* GLFWDLL.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GLFWDLL.lib; sourceTree = "<group>"; };
+		7834877916A3DC5F00AF66C9 /* glut32.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = glut32.lib; sourceTree = "<group>"; };
+		7834877C16A3DC5F00AF66C9 /* callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callbacks.h; sourceTree = "<group>"; };
+		7834877D16A3DC5F00AF66C9 /* enet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enet.h; sourceTree = "<group>"; };
+		7834877E16A3DC5F00AF66C9 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		7834877F16A3DC5F00AF66C9 /* protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protocol.h; sourceTree = "<group>"; };
+		7834878016A3DC5F00AF66C9 /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
+		7834878116A3DC5F00AF66C9 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		7834878216A3DC5F00AF66C9 /* unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unix.h; sourceTree = "<group>"; };
+		7834878316A3DC5F00AF66C9 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		7834878416A3DC5F00AF66C9 /* win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32.h; sourceTree = "<group>"; };
+		7834878616A3DC5F00AF66C9 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		7834878716A3DC5F00AF66C9 /* glfw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw.h; sourceTree = "<group>"; };
+		7834878816A3DC5F00AF66C9 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		7834878916A3DC5F00AF66C9 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		7834878A16A3DC5F00AF66C9 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		7834878B16A3DC5F00AF66C9 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		7834878C16A3DC5F00AF66C9 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		7834878D16A3DC5F00AF66C9 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		7834878E16A3DC5F00AF66C9 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		7834878F16A3DC5F00AF66C9 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		7834879016A3DC5F00AF66C9 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		7834879116A3DC5F00AF66C9 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		7834879216A3DC5F00AF66C9 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		7834879316A3DC5F00AF66C9 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		7834879416A3DC5F00AF66C9 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		7834879616A3DC5F00AF66C9 /* libenet.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libenet.2.dylib; sourceTree = "<group>"; };
+		7834879716A3DC5F00AF66C9 /* libenet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libenet.a; sourceTree = "<group>"; };
+		7834879816A3DC5F00AF66C9 /* libenet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libenet.dylib; sourceTree = "<group>"; };
+		7834879916A3DC5F00AF66C9 /* libenet.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libenet.la; sourceTree = "<group>"; };
+		7834879A16A3DC5F00AF66C9 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw.a; sourceTree = "<group>"; };
+		7834879B16A3DC5F00AF66C9 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		7834879C16A3DC5F00AF66C9 /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = math3d.cpp; sourceTree = "<group>"; };
+		7834879D16A3DC5F00AF66C9 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		7834879E16A3DC5F00AF66C9 /* Network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Network.cpp; sourceTree = "<group>"; };
+		7834879F16A3DC5F00AF66C9 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		783487A016A3DC5F00AF66C9 /* particle_system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle_system.cpp; sourceTree = "<group>"; };
+		783487A116A3DC5F00AF66C9 /* particle_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particle_system.h; sourceTree = "<group>"; };
+		783487A216A3DC5F00AF66C9 /* quadterrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quadterrain.cpp; sourceTree = "<group>"; };
+		783487A316A3DC5F00AF66C9 /* quadterrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quadterrain.h; sourceTree = "<group>"; };
+		783487A416A3DC5F00AF66C9 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		783487A516A3DC5F00AF66C9 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		783487A716A3DC5F00AF66C9 /* advWater.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = advWater.fs; sourceTree = "<group>"; };
+		783487A816A3DC5F00AF66C9 /* advWater.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = advWater.vs; sourceTree = "<group>"; };
+		783487A916A3DC5F00AF66C9 /* clouds.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clouds.fs; sourceTree = "<group>"; };
+		783487AA16A3DC5F00AF66C9 /* clouds.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clouds.vs; sourceTree = "<group>"; };
+		783487AB16A3DC5F00AF66C9 /* model.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model.fs; sourceTree = "<group>"; };
+		783487AC16A3DC5F00AF66C9 /* model.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model.vs; sourceTree = "<group>"; };
+		783487AD16A3DC5F00AF66C9 /* modelA.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = modelA.fs; sourceTree = "<group>"; };
+		783487AE16A3DC5F00AF66C9 /* modelA.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = modelA.vs; sourceTree = "<group>"; };
+		783487B016A3DC5F00AF66C9 /* Sphere.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.fs; sourceTree = "<group>"; };
+		783487B116A3DC5F00AF66C9 /* Sphere.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.vs; sourceTree = "<group>"; };
+		783487B216A3DC5F00AF66C9 /* vertical.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertical.vs; sourceTree = "<group>"; };
+		783487B316A3DC5F00AF66C9 /* simple.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple.fs; sourceTree = "<group>"; };
+		783487B416A3DC5F00AF66C9 /* simple.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple.vs; sourceTree = "<group>"; };
+		783487B516A3DC5F00AF66C9 /* sky.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sky.fs; sourceTree = "<group>"; };
+		783487B616A3DC5F00AF66C9 /* sky.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sky.vs; sourceTree = "<group>"; };
+		783487B716A3DC5F00AF66C9 /* Sprite.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sprite.fs; sourceTree = "<group>"; };
+		783487B816A3DC5F00AF66C9 /* Sprite.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sprite.vs; sourceTree = "<group>"; };
+		783487B916A3DC5F00AF66C9 /* terrain_grid.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terrain_grid.fs; sourceTree = "<group>"; };
+		783487BA16A3DC5F00AF66C9 /* terrain_grid.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terrain_grid.vs; sourceTree = "<group>"; };
+		783487BB16A3DC5F00AF66C9 /* terrain_tex.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terrain_tex.fs; sourceTree = "<group>"; };
+		783487BC16A3DC5F00AF66C9 /* terrain_tex.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terrain_tex.vs; sourceTree = "<group>"; };
+		783487BD16A3DC5F00AF66C9 /* water.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = water.fs; sourceTree = "<group>"; };
+		783487BE16A3DC5F00AF66C9 /* water.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = water.vs; sourceTree = "<group>"; };
+		783487BF16A3DC5F00AF66C9 /* skyplane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = skyplane.cpp; sourceTree = "<group>"; };
+		783487C016A3DC5F00AF66C9 /* skyplane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skyplane.h; sourceTree = "<group>"; };
+		783487C116A3DC5F00AF66C9 /* SPEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPEntity.cpp; sourceTree = "<group>"; };
+		783487C216A3DC5F00AF66C9 /* SPEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEntity.h; sourceTree = "<group>"; };
+		783487C316A3DC5F00AF66C9 /* spMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spMesh.cpp; sourceTree = "<group>"; };
+		783487C416A3DC5F00AF66C9 /* spMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spMesh.h; sourceTree = "<group>"; };
+		783487C516A3DC5F00AF66C9 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		783487C616A3DC5F00AF66C9 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		783487C716A3DC5F00AF66C9 /* terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terrain.cpp; sourceTree = "<group>"; };
+		783487C816A3DC5F00AF66C9 /* terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terrain.h; sourceTree = "<group>"; };
+		783487C916A3DC5F00AF66C9 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		783487CA16A3DC5F00AF66C9 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		783487CB16A3DC5F00AF66C9 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		783487CC16A3DC5F00AF66C9 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		783487CD16A3DC5F00AF66C9 /* Water.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Water.cpp; sourceTree = "<group>"; };
+		783487CE16A3DC5F00AF66C9 /* Water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Water.h; sourceTree = "<group>"; };
+		783A0CBB1503D78400A2272F /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		783A0CBC1503D78400A2272F /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		783A0CDE1503DA8C00A2272F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		784FC63B15A731E4003B30F3 /* world.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = world.icns; sourceTree = "<group>"; };
+		78502E6916A5C0DA006FD81B /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw.a; path = ../scotronics/mac_lib/libglfw.a; sourceTree = SOURCE_ROOT; };
+		785FB3A91591063B00C39F0F /* rock2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rock2.tga; sourceTree = "<group>"; };
+		785FBFE715961D2500C39F0F /* blendmap128.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = blendmap128.tga; sourceTree = "<group>"; };
+		785FC14D1596826200C39F0F /* wave0.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wave0.tga; sourceTree = "<group>"; };
+		785FC14E1596826200C39F0F /* wave1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wave1.tga; sourceTree = "<group>"; };
+		785FC6121598BC9600C39F0F /* waterNormalMap1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = waterNormalMap1.tga; sourceTree = "<group>"; };
+		785FC6131598BC9600C39F0F /* waterNormalMap2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = waterNormalMap2.tga; sourceTree = "<group>"; };
+		785FCEDE159D669400C39F0F /* sand.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = sand.tga; sourceTree = "<group>"; };
+		7888723216B6DF870033DD03 /* bridge.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bridge.spm; sourceTree = "<group>"; };
+		7888762B16BC29620033DD03 /* powersong.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = powersong.spm; sourceTree = "<group>"; };
+		788876D016BD79FB0033DD03 /* speedsong.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = speedsong.spm; sourceTree = "<group>"; };
+		788876FE16BD7D480033DD03 /* ring_particle.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring_particle.tga; sourceTree = "<group>"; };
+		7888770616BD804A0033DD03 /* billboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = billboard.cpp; sourceTree = "<group>"; };
+		7888770716BD804A0033DD03 /* billboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = billboard.h; sourceTree = "<group>"; };
+		7888771D16BD8E810033DD03 /* billboard.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = billboard.fs; sourceTree = "<group>"; };
+		7888771E16BD8E810033DD03 /* billboard.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = billboard.vs; sourceTree = "<group>"; };
+		7888789716BDF5E60033DD03 /* red_ring.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = red_ring.tga; sourceTree = "<group>"; };
+		78887A3B16BE41150033DD03 /* stunspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stunspell.tga; sourceTree = "<group>"; };
+		78887A9F16BE46DF0033DD03 /* mezspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mezspell.tga; sourceTree = "<group>"; };
+		78887EBF16BEFCCD0033DD03 /* groupdefensespell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = groupdefensespell.tga; sourceTree = "<group>"; };
+		78887EC016BEFCCD0033DD03 /* tauntspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = tauntspell.tga; sourceTree = "<group>"; };
+		78887F4516BF035A0033DD03 /* wingsspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wingsspell.tga; sourceTree = "<group>"; };
+		78887FDF16C00B800033DD03 /* blessingspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = blessingspell.tga; sourceTree = "<group>"; };
+		7888804516C0158E0033DD03 /* defensebuffSpell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = defensebuffSpell.tga; sourceTree = "<group>"; };
+		7888804616C0158E0033DD03 /* healchantSpell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = healchantSpell.tga; sourceTree = "<group>"; };
+		7888807516C0B50A0033DD03 /* ddspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ddspell.tga; sourceTree = "<group>"; };
+		7888809F16C0BB940033DD03 /* bardmez.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bardmez.tga; sourceTree = "<group>"; };
+		788880A016C0BB940033DD03 /* bardstun.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bardstun.tga; sourceTree = "<group>"; };
+		788880D416C0C2680033DD03 /* firebolt.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = firebolt.spm; sourceTree = "<group>"; };
+		788880D516C0C2680033DD03 /* icebolt.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = icebolt.spm; sourceTree = "<group>"; };
+		7888813D16C16B6E0033DD03 /* assassinspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = assassinspell.tga; sourceTree = "<group>"; };
+		7888813E16C16B6E0033DD03 /* fire_masteryspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire_masteryspell.tga; sourceTree = "<group>"; };
+		7888813F16C16B6E0033DD03 /* frost_masteryspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = frost_masteryspell.tga; sourceTree = "<group>"; };
+		7888814016C16B6E0033DD03 /* rockspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rockspell.tga; sourceTree = "<group>"; };
+		788881AD16C1720C0033DD03 /* infernospell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = infernospell.tga; sourceTree = "<group>"; };
+		788881E916C20F970033DD03 /* icespell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = icespell.tga; sourceTree = "<group>"; };
+		7888821916C2177E0033DD03 /* lifetap.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = lifetap.spm; sourceTree = "<group>"; };
+		7888827A16C21C960033DD03 /* tranfusespell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = tranfusespell.tga; sourceTree = "<group>"; };
+		788882BF16C21FC70033DD03 /* HealCircle.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = HealCircle.tga; sourceTree = "<group>"; };
+		7888835E16C2268C0033DD03 /* flowerspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = flowerspell.tga; sourceTree = "<group>"; };
+		7888835F16C2268C0033DD03 /* naturespell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = naturespell.tga; sourceTree = "<group>"; };
+		7888836016C2268C0033DD03 /* tornsspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = tornsspell.tga; sourceTree = "<group>"; };
+		7888848716C236C60033DD03 /* cloud.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud.tga; sourceTree = "<group>"; };
+		7888849E16C2B80D0033DD03 /* hurricanespell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = hurricanespell.tga; sourceTree = "<group>"; };
+		7888850B16C2BFEE0033DD03 /* brown_ring.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brown_ring.tga; sourceTree = "<group>"; };
+		7888858316C376B50033DD03 /* rblastspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rblastspell.tga; sourceTree = "<group>"; };
+		788885B816C37A650033DD03 /* holyswordspell.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = holyswordspell.tga; sourceTree = "<group>"; };
+		7888864516C4C0D90033DD03 /* Paladin.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Paladin.spm; sourceTree = "<group>"; };
+		78888A6B16C764260033DD03 /* BardAttack.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = BardAttack.spm; sourceTree = "<group>"; };
+		78888A6C16C764260033DD03 /* DruidAttack.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = DruidAttack.spm; sourceTree = "<group>"; };
+		78888A6D16C764260033DD03 /* PallyAttack.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PallyAttack.spm; sourceTree = "<group>"; };
+		78888A6E16C764260033DD03 /* WizardAttack.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = WizardAttack.spm; sourceTree = "<group>"; };
+		78A16173159F5E4200DB45CA /* clouds.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds.tga; sourceTree = "<group>"; };
+		78C7433C15AA00280049BBF1 /* PlayersTable */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlayersTable; sourceTree = "<group>"; };
+		78C7433E15AA02730049BBF1 /* players.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = players.sqlite3; sourceTree = "<group>"; };
+		78C7435715AA04FD0049BBF1 /* CharacterScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharacterScreen.cpp; sourceTree = "<group>"; };
+		78C7436A15AA08390049BBF1 /* NewCharacterScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewCharacterScreen.cpp; sourceTree = "<group>"; };
+		78C744F415AA74E80049BBF1 /* PlayScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayScreen.cpp; sourceTree = "<group>"; };
+		78DE70F0141F20DA00629158 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		78DFE824167CF01200352E4E /* equip.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = equip.tga; sourceTree = "<group>"; };
+		78DFEA7A1680298200352E4E /* chest.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = chest.tga; sourceTree = "<group>"; };
+		78DFEA7B1680298200352E4E /* feet.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = feet.tga; sourceTree = "<group>"; };
+		78DFEA7C1680298200352E4E /* hand.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = hand.tga; sourceTree = "<group>"; };
+		78DFEA7D1680298200352E4E /* helmet.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = helmet.tga; sourceTree = "<group>"; };
+		78DFEA7E1680298200352E4E /* legs.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = legs.tga; sourceTree = "<group>"; };
+		78DFEA7F1680298200352E4E /* neck.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = neck.tga; sourceTree = "<group>"; };
+		78DFEA801680298200352E4E /* ring.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring.tga; sourceTree = "<group>"; };
+		78DFEA811680298200352E4E /* trinket.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = trinket.tga; sourceTree = "<group>"; };
+		78DFEB61168042E100352E4E /* beer.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = beer.tga; sourceTree = "<group>"; };
+		78DFEB62168042E100352E4E /* sword.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = sword.tga; sourceTree = "<group>"; };
+		78DFEBF9168222AA00352E4E /* totalcompass.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = totalcompass.tga; sourceTree = "<group>"; };
+		78E13A7F1683409900D99D1F /* assassin.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = assassin.tga; sourceTree = "<group>"; };
+		78E13A801683409900D99D1F /* bard.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bard.tga; sourceTree = "<group>"; };
+		78E13A811683409900D99D1F /* bladeturn.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bladeturn.tga; sourceTree = "<group>"; };
+		78E13A821683409900D99D1F /* blow.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = blow.tga; sourceTree = "<group>"; };
+		78E13A831683409900D99D1F /* dd.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = dd.tga; sourceTree = "<group>"; };
+		78E13A851683409900D99D1F /* mez.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mez.tga; sourceTree = "<group>"; };
+		78E13A861683409900D99D1F /* power.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = power.tga; sourceTree = "<group>"; };
+		78E13A871683409900D99D1F /* speed.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = speed.tga; sourceTree = "<group>"; };
+		78E13A881683409900D99D1F /* strike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = strike.tga; sourceTree = "<group>"; };
+		78E13A891683409900D99D1F /* stun.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stun.tga; sourceTree = "<group>"; };
+		78E13A8C1683409900D99D1F /* Druid.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Druid.tga; sourceTree = "<group>"; };
+		78E13A8D1683409900D99D1F /* druid_staff.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = druid_staff.tga; sourceTree = "<group>"; };
+		78E13A8E1683409900D99D1F /* flower.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = flower.tga; sourceTree = "<group>"; };
+		78E13A8F1683409900D99D1F /* group_heal.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = group_heal.tga; sourceTree = "<group>"; };
+		78E13A901683409900D99D1F /* heal.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = heal.tga; sourceTree = "<group>"; };
+		78E13A911683409900D99D1F /* healing_rain.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = healing_rain.tga; sourceTree = "<group>"; };
+		78E13A921683409900D99D1F /* lighting.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = lighting.tga; sourceTree = "<group>"; };
+		78E13A931683409900D99D1F /* nature.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = nature.tga; sourceTree = "<group>"; };
+		78E13A941683409900D99D1F /* torns.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = torns.tga; sourceTree = "<group>"; };
+		78E13A951683409900D99D1F /* twister.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = twister.tga; sourceTree = "<group>"; };
+		78E13A961683409900D99D1F /* vine.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = vine.tga; sourceTree = "<group>"; };
+		78E13A971683409900D99D1F /* wildflower.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wildflower.tga; sourceTree = "<group>"; };
+		78E13A991683409900D99D1F /* defense_buff.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = defense_buff.tga; sourceTree = "<group>"; };
+		78E13A9A1683409900D99D1F /* group_defense.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = group_defense.tga; sourceTree = "<group>"; };
+		78E13A9B1683409900D99D1F /* heal_chant.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = heal_chant.tga; sourceTree = "<group>"; };
+		78E13A9C1683409900D99D1F /* holy_power.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = holy_power.tga; sourceTree = "<group>"; };
+		78E13A9D1683409900D99D1F /* mace.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mace.tga; sourceTree = "<group>"; };
+		78E13A9E1683409900D99D1F /* mace_Attack.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mace_Attack.tga; sourceTree = "<group>"; };
+		78E13A9F1683409900D99D1F /* Paladin.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Paladin.tga; sourceTree = "<group>"; };
+		78E13AA01683409900D99D1F /* rez.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rez.tga; sourceTree = "<group>"; };
+		78E13AA11683409900D99D1F /* self_haste.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = self_haste.tga; sourceTree = "<group>"; };
+		78E13AA21683409900D99D1F /* sheild.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = sheild.tga; sourceTree = "<group>"; };
+		78E13AA31683409900D99D1F /* stun_strike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stun_strike.tga; sourceTree = "<group>"; };
+		78E13AA41683409900D99D1F /* taunt.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = taunt.tga; sourceTree = "<group>"; };
+		78E13AA61683409900D99D1F /* fire_mastery.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire_mastery.tga; sourceTree = "<group>"; };
+		78E13AA71683409900D99D1F /* firebolt.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = firebolt.tga; sourceTree = "<group>"; };
+		78E13AA81683409900D99D1F /* freeze.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = freeze.tga; sourceTree = "<group>"; };
+		78E13AA91683409900D99D1F /* frost_mastery.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = frost_mastery.tga; sourceTree = "<group>"; };
+		78E13AAA1683409900D99D1F /* ice_bolt.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ice_bolt.tga; sourceTree = "<group>"; };
+		78E13AAB1683409900D99D1F /* inferno.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = inferno.tga; sourceTree = "<group>"; };
+		78E13AAC1683409900D99D1F /* life_steal.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = life_steal.tga; sourceTree = "<group>"; };
+		78E13AAE1683409900D99D1F /* staff.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = staff.tga; sourceTree = "<group>"; };
+		78E13AAF1683409900D99D1F /* tomb.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = tomb.tga; sourceTree = "<group>"; };
+		78E13AB01683409900D99D1F /* transfuse.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = transfuse.tga; sourceTree = "<group>"; };
+		78E13AB11683409900D99D1F /* wizard.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wizard.tga; sourceTree = "<group>"; };
+		78E13AF21683441800D99D1F /* rock_armor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rock_armor.tga; sourceTree = "<group>"; };
+		78E1447816865A2000D99D1F /* enemy.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = enemy.tga; sourceTree = "<group>"; };
+		78E146491686B38200D99D1F /* bard.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bard.spm; sourceTree = "<group>"; };
+		78E14B031688878600D99D1F /* bird.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bird.spm; sourceTree = "<group>"; };
+		78E14C1F168928BF00D99D1F /* Sorceress.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sorceress.spm; sourceTree = "<group>"; };
+		78E14E61168CAF1D00D99D1F /* inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inventory.cpp; sourceTree = "<group>"; };
+		78E14E71168CB2BD00D99D1F /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = item.h; sourceTree = "<group>"; };
+		78E14E72168CB2BD00D99D1F /* item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = item.cpp; sourceTree = "<group>"; };
+		78E1528F168D609900D99D1F /* loot.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = loot.tga; sourceTree = "<group>"; };
+		78E15396168DDCB000D99D1F /* equip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = equip.cpp; sourceTree = "<group>"; };
+		78E15749168F24BA00D99D1F /* vitals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vitals.cpp; sourceTree = "<group>"; };
+		78E15833168F946D00D99D1F /* targeting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targeting.cpp; sourceTree = "<group>"; };
+		78E158FE168FFBEA00D99D1F /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		78E158FF168FFBEA00D99D1F /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		78E15F021697384600D99D1F /* brown_bear_attack.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = brown_bear_attack.spm; sourceTree = "<group>"; };
+		78E15F031697384600D99D1F /* brown_bear.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = brown_bear.spm; sourceTree = "<group>"; };
+		78E161541698960F00D99D1F /* emitters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emitters.h; sourceTree = "<group>"; };
+		78E161551698960F00D99D1F /* emitters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = emitters.cpp; sourceTree = "<group>"; };
+		78E16B99169F067200D99D1F /* ciryon_house1.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ciryon_house1.spm; sourceTree = "<group>"; };
+		78E16BB1169F06D700D99D1F /* eriador_tree.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = eriador_tree.spm; sourceTree = "<group>"; };
+		78E16BB2169F06D700D99D1F /* human_town1.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town1.spm; sourceTree = "<group>"; };
+		78E16BB3169F06D700D99D1F /* human_town2.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town2.spm; sourceTree = "<group>"; };
+		78E16BB4169F06D700D99D1F /* human_town3.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town3.spm; sourceTree = "<group>"; };
+		78E16BB5169F06D700D99D1F /* human_town4.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town4.spm; sourceTree = "<group>"; };
+		78E16BB6169F06D700D99D1F /* human_town5.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town5.spm; sourceTree = "<group>"; };
+		78E16BB7169F06D700D99D1F /* human_town6.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town6.spm; sourceTree = "<group>"; };
+		78E16BB8169F06D700D99D1F /* human_town7.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = human_town7.spm; sourceTree = "<group>"; };
+		78E1771F16A216D400D99D1F /* Druid.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Druid.spm; sourceTree = "<group>"; };
+		78E61F6216AD04C500EBE712 /* rock1.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = rock1.spm; sourceTree = "<group>"; };
+		78E61F6316AD04C500EBE712 /* ruins.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ruins.spm; sourceTree = "<group>"; };
+		78EF77D2166DA4E6003AF90D /* PacketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketManager.h; sourceTree = "<group>"; };
+		78EF77D3166DA4E6003AF90D /* PacketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketManager.cpp; sourceTree = "<group>"; };
+		78EF7822166DAFA2003AF90D /* ProcessPackets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProcessPackets.cpp; sourceTree = "<group>"; };
+		78EF7A47166E4F9B003AF90D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		78EF7A48166E4F9B003AF90D /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		78EF7B06166FCBF6003AF90D /* Buff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buff.h; sourceTree = "<group>"; };
+		78EF7B07166FCBF6003AF90D /* Buff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buff.cpp; sourceTree = "<group>"; };
+		78EF7B09166FCC23003AF90D /* Spell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spell.h; sourceTree = "<group>"; };
+		78EF7B0A166FCC23003AF90D /* Spell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Spell.cpp; sourceTree = "<group>"; };
+		78EF7B22166FCD37003AF90D /* Game tables */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Game tables"; sourceTree = "<group>"; };
+		78EF7B24166FD00C003AF90D /* game.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = game.sqlite3; sourceTree = "<group>"; };
+		78EF80C4167454B0003AF90D /* map.quad */ = {isa = PBXFileReference; lastKnownFileType = file; path = map.quad; sourceTree = "<group>"; };
+		78EF81A616745B84003AF90D /* cottage.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = cottage.spm; sourceTree = "<group>"; };
+		78EF81A716745B84003AF90D /* fortwall.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = fortwall.spm; sourceTree = "<group>"; };
+		78EF81A816745B84003AF90D /* town_hall.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = town_hall.spm; sourceTree = "<group>"; };
+		78EF81A916745B84003AF90D /* tree_3.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = tree_3.spm; sourceTree = "<group>"; };
+		78EF81AA16745B84003AF90D /* tree_cluster.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = tree_cluster.spm; sourceTree = "<group>"; };
+		78EF81AB16745B84003AF90D /* tree.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = tree.spm; sourceTree = "<group>"; };
+		78EF81AC16745B84003AF90D /* warrior.spm */ = {isa = PBXFileReference; lastKnownFileType = file; path = warrior.spm; sourceTree = "<group>"; };
+		78EF894D1678770D003AF90D /* charscreen.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = charscreen.tga; sourceTree = "<group>"; };
+		78EF8F48167CE767003AF90D /* bag.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = bag.tga; sourceTree = "<group>"; };
+		78EF8F49167CE767003AF90D /* group.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = group.tga; sourceTree = "<group>"; };
+		78EF8F4A167CE767003AF90D /* map.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = map.tga; sourceTree = "<group>"; };
+		78EF8F4B167CE767003AF90D /* quests.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = quests.tga; sourceTree = "<group>"; };
+		78EF8F4C167CE767003AF90D /* settings.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = settings.tga; sourceTree = "<group>"; };
+		78EF8F4D167CE767003AF90D /* spells.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = spells.tga; sourceTree = "<group>"; };
+		78EF8F4E167CE767003AF90D /* stats.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stats.tga; sourceTree = "<group>"; };
+		78EFD732159FCAD500E6AE86 /* clouds2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds2.tga; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* LostRealms-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LostRealms-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* LostRealms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostRealms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				78DE70F1141F20DA00629158 /* OpenGL.framework in Frameworks */,
+				783A0CDF1503DA8C00A2272F /* GLUT.framework in Frameworks */,
+				7834872B16A3DBBE00AF66C9 /* libGLTools.a in Frameworks */,
+				783487ED16A3DC5F00AF66C9 /* libenet.2.dylib in Frameworks */,
+				783487EE16A3DC5F00AF66C9 /* libenet.a in Frameworks */,
+				783487EF16A3DC5F00AF66C9 /* libenet.dylib in Frameworks */,
+				783487F116A3DC5F00AF66C9 /* libglfw.a in Frameworks */,
+				783487F216A3DC5F00AF66C9 /* libGLTools.a in Frameworks */,
+				78502E6A16A5C0DA006FD81B /* libglfw.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78E158FE168FFBEA00D99D1F /* Enemy.cpp */,
+				78E158FF168FFBEA00D99D1F /* Enemy.h */,
+				783A0CBB1503D78400A2272F /* game.h */,
+				783A0CBC1503D78400A2272F /* game.cpp */,
+				78EF77D2166DA4E6003AF90D /* PacketManager.h */,
+				78EF77D3166DA4E6003AF90D /* PacketManager.cpp */,
+				78EF7822166DAFA2003AF90D /* ProcessPackets.cpp */,
+				78EF7A47166E4F9B003AF90D /* Player.h */,
+				78EF7A48166E4F9B003AF90D /* Player.cpp */,
+				78EF7B06166FCBF6003AF90D /* Buff.h */,
+				78EF7B07166FCBF6003AF90D /* Buff.cpp */,
+				78EF7B09166FCC23003AF90D /* Spell.h */,
+				78EF7B0A166FCC23003AF90D /* Spell.cpp */,
+				78E14E61168CAF1D00D99D1F /* inventory.cpp */,
+				78E14E71168CB2BD00D99D1F /* item.h */,
+				78E14E72168CB2BD00D99D1F /* item.cpp */,
+				78E15396168DDCB000D99D1F /* equip.cpp */,
+				78E15749168F24BA00D99D1F /* vitals.cpp */,
+				78E15833168F946D00D99D1F /* targeting.cpp */,
+				78E161541698960F00D99D1F /* emitters.h */,
+				78E161551698960F00D99D1F /* emitters.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78502E6916A5C0DA006FD81B /* libglfw.a */,
+				7834872A16A3DBBE00AF66C9 /* libGLTools.a */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				78DE70F0141F20DA00629158 /* OpenGL.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* LostRealms.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				78C742F915A9F9710049BBF1 /* Screens */,
+				7834873C16A3DC5F00AF66C9 /* scotronics */,
+				78C7433B15AA000F0049BBF1 /* Sqlite3 Tables */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				783A0CDE1503DA8C00A2272F /* GLUT.framework */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* LostRealms_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.cpp */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78EF80C4167454B0003AF90D /* map.quad */,
+				78EF7B24166FD00C003AF90D /* game.sqlite3 */,
+				78C7433E15AA02730049BBF1 /* players.sqlite3 */,
+				784FC63B15A731E4003B30F3 /* world.icns */,
+				785FB4211591384500C39F0F /* models */,
+				78134F3D158A341E00CE6566 /* textures */,
+				8D1107310486CEB800E47090 /* LostRealms-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78134F3D158A341E00CE6566 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				788885B816C37A650033DD03 /* holyswordspell.tga */,
+				7888858316C376B50033DD03 /* rblastspell.tga */,
+				7888850B16C2BFEE0033DD03 /* brown_ring.tga */,
+				7888849E16C2B80D0033DD03 /* hurricanespell.tga */,
+				7888848716C236C60033DD03 /* cloud.tga */,
+				7888835E16C2268C0033DD03 /* flowerspell.tga */,
+				7888835F16C2268C0033DD03 /* naturespell.tga */,
+				7888836016C2268C0033DD03 /* tornsspell.tga */,
+				788882BF16C21FC70033DD03 /* HealCircle.tga */,
+				7888827A16C21C960033DD03 /* tranfusespell.tga */,
+				788881E916C20F970033DD03 /* icespell.tga */,
+				788881AD16C1720C0033DD03 /* infernospell.tga */,
+				7888813D16C16B6E0033DD03 /* assassinspell.tga */,
+				7888813E16C16B6E0033DD03 /* fire_masteryspell.tga */,
+				7888813F16C16B6E0033DD03 /* frost_masteryspell.tga */,
+				7888814016C16B6E0033DD03 /* rockspell.tga */,
+				7888809F16C0BB940033DD03 /* bardmez.tga */,
+				788880A016C0BB940033DD03 /* bardstun.tga */,
+				7888807516C0B50A0033DD03 /* ddspell.tga */,
+				7888804516C0158E0033DD03 /* defensebuffSpell.tga */,
+				7888804616C0158E0033DD03 /* healchantSpell.tga */,
+				78887FDF16C00B800033DD03 /* blessingspell.tga */,
+				78887F4516BF035A0033DD03 /* wingsspell.tga */,
+				78887EBF16BEFCCD0033DD03 /* groupdefensespell.tga */,
+				78887EC016BEFCCD0033DD03 /* tauntspell.tga */,
+				78887A9F16BE46DF0033DD03 /* mezspell.tga */,
+				78887A3B16BE41150033DD03 /* stunspell.tga */,
+				7888789716BDF5E60033DD03 /* red_ring.tga */,
+				788876FE16BD7D480033DD03 /* ring_particle.tga */,
+				78E1447816865A2000D99D1F /* enemy.tga */,
+				78E13A7D1683409900D99D1F /* spells */,
+				78DFEBF9168222AA00352E4E /* totalcompass.tga */,
+				78DFEA791680298200352E4E /* equipment */,
+				78DFE824167CF01200352E4E /* equip.tga */,
+				78EF8F48167CE767003AF90D /* bag.tga */,
+				78EF8F49167CE767003AF90D /* group.tga */,
+				78EF8F4A167CE767003AF90D /* map.tga */,
+				78EF8F4B167CE767003AF90D /* quests.tga */,
+				78EF8F4C167CE767003AF90D /* settings.tga */,
+				78EF8F4D167CE767003AF90D /* spells.tga */,
+				78EF8F4E167CE767003AF90D /* stats.tga */,
+				78EF894D1678770D003AF90D /* charscreen.tga */,
+				7813550A158E583200CE6566 /* blendmap64.tga */,
+				78EFD732159FCAD500E6AE86 /* clouds2.tga */,
+				78A16173159F5E4200DB45CA /* clouds.tga */,
+				785FCEDE159D669400C39F0F /* sand.tga */,
+				785FC6121598BC9600C39F0F /* waterNormalMap1.tga */,
+				785FC6131598BC9600C39F0F /* waterNormalMap2.tga */,
+				785FC14D1596826200C39F0F /* wave0.tga */,
+				785FC14E1596826200C39F0F /* wave1.tga */,
+				785FBFE715961D2500C39F0F /* blendmap128.tga */,
+				785FB3A91591063B00C39F0F /* rock2.tga */,
+				78135296158B84A900CE6566 /* dirt.tga */,
+				78135297158B84A900CE6566 /* rock.tga */,
+				78135298158B84A900CE6566 /* snow.tga */,
+				78134FFA158AEB6E00CE6566 /* blendmap.tga */,
+				78134F3E158A341E00CE6566 /* grass.tga */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		7834873C16A3DC5F00AF66C9 /* scotronics */ = {
+			isa = PBXGroup;
+			children = (
+				7888770616BD804A0033DD03 /* billboard.cpp */,
+				7888770716BD804A0033DD03 /* billboard.h */,
+				7834873D16A3DC5F00AF66C9 /* app.cpp */,
+				7834873E16A3DC5F00AF66C9 /* app.h */,
+				7834873F16A3DC5F00AF66C9 /* bin */,
+				7834874516A3DC5F00AF66C9 /* blank.cpp */,
+				7834874616A3DC5F00AF66C9 /* blank.h */,
+				7834874716A3DC5F00AF66C9 /* Camera.cpp */,
+				7834874816A3DC5F00AF66C9 /* Camera.h */,
+				7834874916A3DC5F00AF66C9 /* Database */,
+				7834874E16A3DC5F00AF66C9 /* DayNight.cpp */,
+				7834874F16A3DC5F00AF66C9 /* daynight.h */,
+				7834875016A3DC5F00AF66C9 /* font.cpp */,
+				7834875116A3DC5F00AF66C9 /* font.h */,
+				7834875216A3DC5F00AF66C9 /* Frustum.cpp */,
+				7834875316A3DC5F00AF66C9 /* Frustum.h */,
+				7834875416A3DC5F00AF66C9 /* GUI */,
+				7834876D16A3DC5F00AF66C9 /* include */,
+				7834877416A3DC5F00AF66C9 /* lib */,
+				7834877A16A3DC5F00AF66C9 /* mac_include */,
+				7834879516A3DC5F00AF66C9 /* mac_lib */,
+				7834879C16A3DC5F00AF66C9 /* math3d.cpp */,
+				7834879D16A3DC5F00AF66C9 /* math3d.h */,
+				7834879E16A3DC5F00AF66C9 /* Network.cpp */,
+				7834879F16A3DC5F00AF66C9 /* Network.h */,
+				783487A016A3DC5F00AF66C9 /* particle_system.cpp */,
+				783487A116A3DC5F00AF66C9 /* particle_system.h */,
+				783487A216A3DC5F00AF66C9 /* quadterrain.cpp */,
+				783487A316A3DC5F00AF66C9 /* quadterrain.h */,
+				783487A416A3DC5F00AF66C9 /* shader.cpp */,
+				783487A516A3DC5F00AF66C9 /* shader.h */,
+				783487A616A3DC5F00AF66C9 /* shaders */,
+				783487BF16A3DC5F00AF66C9 /* skyplane.cpp */,
+				783487C016A3DC5F00AF66C9 /* skyplane.h */,
+				783487C116A3DC5F00AF66C9 /* SPEntity.cpp */,
+				783487C216A3DC5F00AF66C9 /* SPEntity.h */,
+				783487C316A3DC5F00AF66C9 /* spMesh.cpp */,
+				783487C416A3DC5F00AF66C9 /* spMesh.h */,
+				783487C516A3DC5F00AF66C9 /* Sprite.cpp */,
+				783487C616A3DC5F00AF66C9 /* Sprite.h */,
+				783487C716A3DC5F00AF66C9 /* terrain.cpp */,
+				783487C816A3DC5F00AF66C9 /* terrain.h */,
+				783487C916A3DC5F00AF66C9 /* texture.cpp */,
+				783487CA16A3DC5F00AF66C9 /* texture.h */,
+				783487CB16A3DC5F00AF66C9 /* util.cpp */,
+				783487CC16A3DC5F00AF66C9 /* util.h */,
+				783487CD16A3DC5F00AF66C9 /* Water.cpp */,
+				783487CE16A3DC5F00AF66C9 /* Water.h */,
+			);
+			name = scotronics;
+			path = ../scotronics;
+			sourceTree = SOURCE_ROOT;
+		};
+		7834873F16A3DC5F00AF66C9 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				7834874016A3DC5F00AF66C9 /* glew32.dll */,
+				7834874116A3DC5F00AF66C9 /* glew32mx.dll */,
+				7834874216A3DC5F00AF66C9 /* GLFW.dll */,
+				7834874316A3DC5F00AF66C9 /* glu32.dll */,
+				7834874416A3DC5F00AF66C9 /* glut32.dll */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		7834874916A3DC5F00AF66C9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7834874A16A3DC5F00AF66C9 /* Database.cpp */,
+				7834874B16A3DC5F00AF66C9 /* Database.h */,
+				7834874C16A3DC5F00AF66C9 /* sqlite3.c */,
+				7834874D16A3DC5F00AF66C9 /* sqlite3.h */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		7834875416A3DC5F00AF66C9 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				7834875516A3DC5F00AF66C9 /* UIBar.cpp */,
+				7834875616A3DC5F00AF66C9 /* UIBar.h */,
+				7834875716A3DC5F00AF66C9 /* UIButton.cpp */,
+				7834875816A3DC5F00AF66C9 /* UIButton.h */,
+				7834875916A3DC5F00AF66C9 /* UICanvas.cpp */,
+				7834875A16A3DC5F00AF66C9 /* UICanvas.h */,
+				7834875B16A3DC5F00AF66C9 /* UICheckbox.cpp */,
+				7834875C16A3DC5F00AF66C9 /* UICheckbox.h */,
+				7834875D16A3DC5F00AF66C9 /* UIImage.cpp */,
+				7834875E16A3DC5F00AF66C9 /* UIImage.h */,
+				7834875F16A3DC5F00AF66C9 /* UILabel.cpp */,
+				7834876016A3DC5F00AF66C9 /* UILabel.h */,
+				7834876116A3DC5F00AF66C9 /* UIListbox.cpp */,
+				7834876216A3DC5F00AF66C9 /* UIListbox.h */,
+				7834876316A3DC5F00AF66C9 /* UISlider.cpp */,
+				7834876416A3DC5F00AF66C9 /* UISlider.h */,
+				7834876516A3DC5F00AF66C9 /* UIStepSlider.cpp */,
+				7834876616A3DC5F00AF66C9 /* UIStepSlider.h */,
+				7834876716A3DC5F00AF66C9 /* UITextbox.cpp */,
+				7834876816A3DC5F00AF66C9 /* UITextbox.h */,
+				7834876916A3DC5F00AF66C9 /* UIWidget.cpp */,
+				7834876A16A3DC5F00AF66C9 /* UIWidget.h */,
+				7834876B16A3DC5F00AF66C9 /* UIWindow.cpp */,
+				7834876C16A3DC5F00AF66C9 /* UIWindow.h */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		7834876D16A3DC5F00AF66C9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7834876E16A3DC5F00AF66C9 /* GL */,
+				7834877316A3DC5F00AF66C9 /* glut.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7834876E16A3DC5F00AF66C9 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				7834876F16A3DC5F00AF66C9 /* glew.h */,
+				7834877016A3DC5F00AF66C9 /* glfw.h */,
+				7834877116A3DC5F00AF66C9 /* glxew.h */,
+				7834877216A3DC5F00AF66C9 /* wglew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		7834877416A3DC5F00AF66C9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7834877516A3DC5F00AF66C9 /* glew32.lib */,
+				7834877616A3DC5F00AF66C9 /* glew32mx.lib */,
+				7834877716A3DC5F00AF66C9 /* GLFW.lib */,
+				7834877816A3DC5F00AF66C9 /* GLFWDLL.lib */,
+				7834877916A3DC5F00AF66C9 /* glut32.lib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		7834877A16A3DC5F00AF66C9 /* mac_include */ = {
+			isa = PBXGroup;
+			children = (
+				7834877B16A3DC5F00AF66C9 /* enet */,
+				7834878516A3DC5F00AF66C9 /* GL */,
+				7834878A16A3DC5F00AF66C9 /* GLBatch.h */,
+				7834878B16A3DC5F00AF66C9 /* GLBatchBase.h */,
+				7834878C16A3DC5F00AF66C9 /* GLFrame.h */,
+				7834878D16A3DC5F00AF66C9 /* GLFrustum.h */,
+				7834878E16A3DC5F00AF66C9 /* GLGeometryTransform.h */,
+				7834878F16A3DC5F00AF66C9 /* GLMatrixStack.h */,
+				7834879016A3DC5F00AF66C9 /* GLShaderManager.h */,
+				7834879116A3DC5F00AF66C9 /* GLTools.h */,
+				7834879216A3DC5F00AF66C9 /* GLTriangleBatch.h */,
+				7834879316A3DC5F00AF66C9 /* math3d.h */,
+				7834879416A3DC5F00AF66C9 /* StopWatch.h */,
+			);
+			path = mac_include;
+			sourceTree = "<group>";
+		};
+		7834877B16A3DC5F00AF66C9 /* enet */ = {
+			isa = PBXGroup;
+			children = (
+				7834877C16A3DC5F00AF66C9 /* callbacks.h */,
+				7834877D16A3DC5F00AF66C9 /* enet.h */,
+				7834877E16A3DC5F00AF66C9 /* list.h */,
+				7834877F16A3DC5F00AF66C9 /* protocol.h */,
+				7834878016A3DC5F00AF66C9 /* time.h */,
+				7834878116A3DC5F00AF66C9 /* types.h */,
+				7834878216A3DC5F00AF66C9 /* unix.h */,
+				7834878316A3DC5F00AF66C9 /* utility.h */,
+				7834878416A3DC5F00AF66C9 /* win32.h */,
+			);
+			path = enet;
+			sourceTree = "<group>";
+		};
+		7834878516A3DC5F00AF66C9 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				7834878616A3DC5F00AF66C9 /* glew.h */,
+				7834878716A3DC5F00AF66C9 /* glfw.h */,
+				7834878816A3DC5F00AF66C9 /* glxew.h */,
+				7834878916A3DC5F00AF66C9 /* wglew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		7834879516A3DC5F00AF66C9 /* mac_lib */ = {
+			isa = PBXGroup;
+			children = (
+				7834879616A3DC5F00AF66C9 /* libenet.2.dylib */,
+				7834879716A3DC5F00AF66C9 /* libenet.a */,
+				7834879816A3DC5F00AF66C9 /* libenet.dylib */,
+				7834879916A3DC5F00AF66C9 /* libenet.la */,
+				7834879A16A3DC5F00AF66C9 /* libglfw.a */,
+				7834879B16A3DC5F00AF66C9 /* libGLTools.a */,
+			);
+			path = mac_lib;
+			sourceTree = "<group>";
+		};
+		783487A616A3DC5F00AF66C9 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				7888771D16BD8E810033DD03 /* billboard.fs */,
+				7888771E16BD8E810033DD03 /* billboard.vs */,
+				783487A716A3DC5F00AF66C9 /* advWater.fs */,
+				783487A816A3DC5F00AF66C9 /* advWater.vs */,
+				783487A916A3DC5F00AF66C9 /* clouds.fs */,
+				783487AA16A3DC5F00AF66C9 /* clouds.vs */,
+				783487AB16A3DC5F00AF66C9 /* model.fs */,
+				783487AC16A3DC5F00AF66C9 /* model.vs */,
+				783487AD16A3DC5F00AF66C9 /* modelA.fs */,
+				783487AE16A3DC5F00AF66C9 /* modelA.vs */,
+				783487AF16A3DC5F00AF66C9 /* particle Shaders */,
+				783487B316A3DC5F00AF66C9 /* simple.fs */,
+				783487B416A3DC5F00AF66C9 /* simple.vs */,
+				783487B516A3DC5F00AF66C9 /* sky.fs */,
+				783487B616A3DC5F00AF66C9 /* sky.vs */,
+				783487B716A3DC5F00AF66C9 /* Sprite.fs */,
+				783487B816A3DC5F00AF66C9 /* Sprite.vs */,
+				783487B916A3DC5F00AF66C9 /* terrain_grid.fs */,
+				783487BA16A3DC5F00AF66C9 /* terrain_grid.vs */,
+				783487BB16A3DC5F00AF66C9 /* terrain_tex.fs */,
+				783487BC16A3DC5F00AF66C9 /* terrain_tex.vs */,
+				783487BD16A3DC5F00AF66C9 /* water.fs */,
+				783487BE16A3DC5F00AF66C9 /* water.vs */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		783487AF16A3DC5F00AF66C9 /* particle Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				783487B016A3DC5F00AF66C9 /* Sphere.fs */,
+				783487B116A3DC5F00AF66C9 /* Sphere.vs */,
+				783487B216A3DC5F00AF66C9 /* vertical.vs */,
+			);
+			path = "particle Shaders";
+			sourceTree = "<group>";
+		};
+		785FB4211591384500C39F0F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				78888A6B16C764260033DD03 /* BardAttack.spm */,
+				78888A6C16C764260033DD03 /* DruidAttack.spm */,
+				78888A6D16C764260033DD03 /* PallyAttack.spm */,
+				78888A6E16C764260033DD03 /* WizardAttack.spm */,
+				7888864516C4C0D90033DD03 /* Paladin.spm */,
+				7888821916C2177E0033DD03 /* lifetap.spm */,
+				788880D416C0C2680033DD03 /* firebolt.spm */,
+				788880D516C0C2680033DD03 /* icebolt.spm */,
+				788876D016BD79FB0033DD03 /* speedsong.spm */,
+				7888762B16BC29620033DD03 /* powersong.spm */,
+				7888723216B6DF870033DD03 /* bridge.spm */,
+				78E61F6216AD04C500EBE712 /* rock1.spm */,
+				78E61F6316AD04C500EBE712 /* ruins.spm */,
+				78E1771F16A216D400D99D1F /* Druid.spm */,
+				78E16BB1169F06D700D99D1F /* eriador_tree.spm */,
+				78E16BB2169F06D700D99D1F /* human_town1.spm */,
+				78E16BB3169F06D700D99D1F /* human_town2.spm */,
+				78E16BB4169F06D700D99D1F /* human_town3.spm */,
+				78E16BB5169F06D700D99D1F /* human_town4.spm */,
+				78E16BB6169F06D700D99D1F /* human_town5.spm */,
+				78E16BB7169F06D700D99D1F /* human_town6.spm */,
+				78E16BB8169F06D700D99D1F /* human_town7.spm */,
+				78E16B99169F067200D99D1F /* ciryon_house1.spm */,
+				78E15F021697384600D99D1F /* brown_bear_attack.spm */,
+				78E15F031697384600D99D1F /* brown_bear.spm */,
+				78E14C1F168928BF00D99D1F /* Sorceress.spm */,
+				78E14B031688878600D99D1F /* bird.spm */,
+				78E146491686B38200D99D1F /* bard.spm */,
+				78EF81A616745B84003AF90D /* cottage.spm */,
+				78EF81A716745B84003AF90D /* fortwall.spm */,
+				78EF81A816745B84003AF90D /* town_hall.spm */,
+				78EF81A916745B84003AF90D /* tree_3.spm */,
+				78EF81AA16745B84003AF90D /* tree_cluster.spm */,
+				78EF81AB16745B84003AF90D /* tree.spm */,
+				78EF81AC16745B84003AF90D /* warrior.spm */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		78C742F915A9F9710049BBF1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				78C7435715AA04FD0049BBF1 /* CharacterScreen.cpp */,
+				78C7436A15AA08390049BBF1 /* NewCharacterScreen.cpp */,
+				78C744F415AA74E80049BBF1 /* PlayScreen.cpp */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		78C7433B15AA000F0049BBF1 /* Sqlite3 Tables */ = {
+			isa = PBXGroup;
+			children = (
+				78C7433C15AA00280049BBF1 /* PlayersTable */,
+				78EF7B22166FCD37003AF90D /* Game tables */,
+			);
+			name = "Sqlite3 Tables";
+			sourceTree = "<group>";
+		};
+		78DFEA791680298200352E4E /* equipment */ = {
+			isa = PBXGroup;
+			children = (
+				78E1528F168D609900D99D1F /* loot.tga */,
+				78DFEB61168042E100352E4E /* beer.tga */,
+				78DFEB62168042E100352E4E /* sword.tga */,
+				78DFEA7A1680298200352E4E /* chest.tga */,
+				78DFEA7B1680298200352E4E /* feet.tga */,
+				78DFEA7C1680298200352E4E /* hand.tga */,
+				78DFEA7D1680298200352E4E /* helmet.tga */,
+				78DFEA7E1680298200352E4E /* legs.tga */,
+				78DFEA7F1680298200352E4E /* neck.tga */,
+				78DFEA801680298200352E4E /* ring.tga */,
+				78DFEA811680298200352E4E /* trinket.tga */,
+			);
+			path = equipment;
+			sourceTree = "<group>";
+		};
+		78E13A7D1683409900D99D1F /* spells */ = {
+			isa = PBXGroup;
+			children = (
+				78E13A7E1683409900D99D1F /* bard */,
+				78E13A8B1683409900D99D1F /* druid */,
+				78E13A981683409900D99D1F /* paladin */,
+				78E13AA51683409900D99D1F /* wizard */,
+			);
+			path = spells;
+			sourceTree = "<group>";
+		};
+		78E13A7E1683409900D99D1F /* bard */ = {
+			isa = PBXGroup;
+			children = (
+				78E13A7F1683409900D99D1F /* assassin.tga */,
+				78E13A801683409900D99D1F /* bard.tga */,
+				78E13A811683409900D99D1F /* bladeturn.tga */,
+				78E13A821683409900D99D1F /* blow.tga */,
+				78E13A831683409900D99D1F /* dd.tga */,
+				78E13A851683409900D99D1F /* mez.tga */,
+				78E13A861683409900D99D1F /* power.tga */,
+				78E13A871683409900D99D1F /* speed.tga */,
+				78E13A881683409900D99D1F /* strike.tga */,
+				78E13A891683409900D99D1F /* stun.tga */,
+			);
+			path = bard;
+			sourceTree = "<group>";
+		};
+		78E13A8B1683409900D99D1F /* druid */ = {
+			isa = PBXGroup;
+			children = (
+				78E13A8C1683409900D99D1F /* Druid.tga */,
+				78E13A8D1683409900D99D1F /* druid_staff.tga */,
+				78E13A8E1683409900D99D1F /* flower.tga */,
+				78E13A8F1683409900D99D1F /* group_heal.tga */,
+				78E13A901683409900D99D1F /* heal.tga */,
+				78E13A911683409900D99D1F /* healing_rain.tga */,
+				78E13A921683409900D99D1F /* lighting.tga */,
+				78E13A931683409900D99D1F /* nature.tga */,
+				78E13A941683409900D99D1F /* torns.tga */,
+				78E13A951683409900D99D1F /* twister.tga */,
+				78E13A961683409900D99D1F /* vine.tga */,
+				78E13A971683409900D99D1F /* wildflower.tga */,
+			);
+			path = druid;
+			sourceTree = "<group>";
+		};
+		78E13A981683409900D99D1F /* paladin */ = {
+			isa = PBXGroup;
+			children = (
+				78E13A991683409900D99D1F /* defense_buff.tga */,
+				78E13A9A1683409900D99D1F /* group_defense.tga */,
+				78E13A9B1683409900D99D1F /* heal_chant.tga */,
+				78E13A9C1683409900D99D1F /* holy_power.tga */,
+				78E13A9D1683409900D99D1F /* mace.tga */,
+				78E13A9E1683409900D99D1F /* mace_Attack.tga */,
+				78E13A9F1683409900D99D1F /* Paladin.tga */,
+				78E13AA01683409900D99D1F /* rez.tga */,
+				78E13AA11683409900D99D1F /* self_haste.tga */,
+				78E13AA21683409900D99D1F /* sheild.tga */,
+				78E13AA31683409900D99D1F /* stun_strike.tga */,
+				78E13AA41683409900D99D1F /* taunt.tga */,
+			);
+			path = paladin;
+			sourceTree = "<group>";
+		};
+		78E13AA51683409900D99D1F /* wizard */ = {
+			isa = PBXGroup;
+			children = (
+				78E13AF21683441800D99D1F /* rock_armor.tga */,
+				78E13AA61683409900D99D1F /* fire_mastery.tga */,
+				78E13AA71683409900D99D1F /* firebolt.tga */,
+				78E13AA81683409900D99D1F /* freeze.tga */,
+				78E13AA91683409900D99D1F /* frost_mastery.tga */,
+				78E13AAA1683409900D99D1F /* ice_bolt.tga */,
+				78E13AAB1683409900D99D1F /* inferno.tga */,
+				78E13AAC1683409900D99D1F /* life_steal.tga */,
+				78E13AAE1683409900D99D1F /* staff.tga */,
+				78E13AAF1683409900D99D1F /* tomb.tga */,
+				78E13AB01683409900D99D1F /* transfuse.tga */,
+				78E13AB11683409900D99D1F /* wizard.tga */,
+			);
+			path = wizard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* LostRealms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LostRealms" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LostRealms;
+			productInstallPath = "$(HOME)/Applications";
+			productName = glfw;
+			productReference = 8D1107320486CEB800E47090 /* LostRealms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LostRealms" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* glfw */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* LostRealms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				78134F3F158A341E00CE6566 /* grass.tga in Resources */,
+				78134FFB158AEB6E00CE6566 /* blendmap.tga in Resources */,
+				78135299158B84A900CE6566 /* dirt.tga in Resources */,
+				7813529A158B84A900CE6566 /* rock.tga in Resources */,
+				7813529B158B84A900CE6566 /* snow.tga in Resources */,
+				7813550B158E583200CE6566 /* blendmap64.tga in Resources */,
+				785FB3AA1591063B00C39F0F /* rock2.tga in Resources */,
+				785FBFE815961D2500C39F0F /* blendmap128.tga in Resources */,
+				785FC14F1596826200C39F0F /* wave0.tga in Resources */,
+				785FC1501596826200C39F0F /* wave1.tga in Resources */,
+				785FC6141598BC9600C39F0F /* waterNormalMap1.tga in Resources */,
+				785FC6151598BC9600C39F0F /* waterNormalMap2.tga in Resources */,
+				785FCEDF159D669400C39F0F /* sand.tga in Resources */,
+				78A16174159F5E4200DB45CA /* clouds.tga in Resources */,
+				78EFD733159FCAD500E6AE86 /* clouds2.tga in Resources */,
+				784FC63C15A731E4003B30F3 /* world.icns in Resources */,
+				78C7433D15AA00280049BBF1 /* PlayersTable in Resources */,
+				78C7433F15AA02730049BBF1 /* players.sqlite3 in Resources */,
+				78EF7B23166FCD37003AF90D /* Game tables in Resources */,
+				78EF7B25166FD00C003AF90D /* game.sqlite3 in Resources */,
+				78EF80C5167454B0003AF90D /* map.quad in Resources */,
+				78EF81AD16745B84003AF90D /* cottage.spm in Resources */,
+				78EF81AE16745B84003AF90D /* fortwall.spm in Resources */,
+				78EF81AF16745B84003AF90D /* town_hall.spm in Resources */,
+				78EF81B016745B84003AF90D /* tree_3.spm in Resources */,
+				78EF81B116745B84003AF90D /* tree_cluster.spm in Resources */,
+				78EF81B216745B84003AF90D /* tree.spm in Resources */,
+				78EF81B316745B84003AF90D /* warrior.spm in Resources */,
+				78EF894E1678770D003AF90D /* charscreen.tga in Resources */,
+				78EF8F4F167CE767003AF90D /* bag.tga in Resources */,
+				78EF8F50167CE767003AF90D /* group.tga in Resources */,
+				78EF8F51167CE767003AF90D /* map.tga in Resources */,
+				78EF8F52167CE767003AF90D /* quests.tga in Resources */,
+				78EF8F53167CE767003AF90D /* settings.tga in Resources */,
+				78EF8F54167CE767003AF90D /* spells.tga in Resources */,
+				78EF8F55167CE767003AF90D /* stats.tga in Resources */,
+				78DFE825167CF01200352E4E /* equip.tga in Resources */,
+				78DFEA821680298200352E4E /* chest.tga in Resources */,
+				78DFEA831680298200352E4E /* feet.tga in Resources */,
+				78DFEA841680298200352E4E /* hand.tga in Resources */,
+				78DFEA851680298200352E4E /* helmet.tga in Resources */,
+				78DFEA861680298200352E4E /* legs.tga in Resources */,
+				78DFEA871680298200352E4E /* neck.tga in Resources */,
+				78DFEA881680298200352E4E /* ring.tga in Resources */,
+				78DFEA891680298200352E4E /* trinket.tga in Resources */,
+				78DFEB63168042E100352E4E /* beer.tga in Resources */,
+				78DFEB64168042E100352E4E /* sword.tga in Resources */,
+				78DFEBFA168222AA00352E4E /* totalcompass.tga in Resources */,
+				78E13AB21683409900D99D1F /* assassin.tga in Resources */,
+				78E13AB31683409900D99D1F /* bard.tga in Resources */,
+				78E13AB41683409900D99D1F /* bladeturn.tga in Resources */,
+				78E13AB51683409900D99D1F /* blow.tga in Resources */,
+				78E13AB61683409900D99D1F /* dd.tga in Resources */,
+				78E13AB81683409900D99D1F /* mez.tga in Resources */,
+				78E13AB91683409900D99D1F /* power.tga in Resources */,
+				78E13ABA1683409900D99D1F /* speed.tga in Resources */,
+				78E13ABB1683409900D99D1F /* strike.tga in Resources */,
+				78E13ABC1683409900D99D1F /* stun.tga in Resources */,
+				78E13ABE1683409900D99D1F /* Druid.tga in Resources */,
+				78E13ABF1683409900D99D1F /* druid_staff.tga in Resources */,
+				78E13AC01683409900D99D1F /* flower.tga in Resources */,
+				78E13AC11683409900D99D1F /* group_heal.tga in Resources */,
+				78E13AC21683409900D99D1F /* heal.tga in Resources */,
+				78E13AC31683409900D99D1F /* healing_rain.tga in Resources */,
+				78E13AC41683409900D99D1F /* lighting.tga in Resources */,
+				78E13AC51683409900D99D1F /* nature.tga in Resources */,
+				78E13AC61683409900D99D1F /* torns.tga in Resources */,
+				78E13AC71683409900D99D1F /* twister.tga in Resources */,
+				78E13AC81683409900D99D1F /* vine.tga in Resources */,
+				78E13AC91683409900D99D1F /* wildflower.tga in Resources */,
+				78E13ACA1683409900D99D1F /* defense_buff.tga in Resources */,
+				78E13ACB1683409900D99D1F /* group_defense.tga in Resources */,
+				78E13ACC1683409900D99D1F /* heal_chant.tga in Resources */,
+				78E13ACD1683409900D99D1F /* holy_power.tga in Resources */,
+				78E13ACE1683409900D99D1F /* mace.tga in Resources */,
+				78E13ACF1683409900D99D1F /* mace_Attack.tga in Resources */,
+				78E13AD01683409900D99D1F /* Paladin.tga in Resources */,
+				78E13AD11683409900D99D1F /* rez.tga in Resources */,
+				78E13AD21683409900D99D1F /* self_haste.tga in Resources */,
+				78E13AD31683409900D99D1F /* sheild.tga in Resources */,
+				78E13AD41683409900D99D1F /* stun_strike.tga in Resources */,
+				78E13AD51683409900D99D1F /* taunt.tga in Resources */,
+				78E13AD61683409900D99D1F /* fire_mastery.tga in Resources */,
+				78E13AD71683409900D99D1F /* firebolt.tga in Resources */,
+				78E13AD81683409900D99D1F /* freeze.tga in Resources */,
+				78E13AD91683409900D99D1F /* frost_mastery.tga in Resources */,
+				78E13ADA1683409900D99D1F /* ice_bolt.tga in Resources */,
+				78E13ADB1683409900D99D1F /* inferno.tga in Resources */,
+				78E13ADC1683409900D99D1F /* life_steal.tga in Resources */,
+				78E13ADE1683409900D99D1F /* staff.tga in Resources */,
+				78E13ADF1683409900D99D1F /* tomb.tga in Resources */,
+				78E13AE01683409900D99D1F /* transfuse.tga in Resources */,
+				78E13AE11683409900D99D1F /* wizard.tga in Resources */,
+				78E13AF31683441800D99D1F /* rock_armor.tga in Resources */,
+				78E1447916865A2000D99D1F /* enemy.tga in Resources */,
+				78E1464A1686B38200D99D1F /* bard.spm in Resources */,
+				78E14B041688878600D99D1F /* bird.spm in Resources */,
+				78E14C20168928BF00D99D1F /* Sorceress.spm in Resources */,
+				78E15290168D609900D99D1F /* loot.tga in Resources */,
+				78E15F041697384600D99D1F /* brown_bear_attack.spm in Resources */,
+				78E15F051697384600D99D1F /* brown_bear.spm in Resources */,
+				78E16B9A169F067200D99D1F /* ciryon_house1.spm in Resources */,
+				78E16BB9169F06D700D99D1F /* eriador_tree.spm in Resources */,
+				78E16BBA169F06D700D99D1F /* human_town1.spm in Resources */,
+				78E16BBB169F06D700D99D1F /* human_town2.spm in Resources */,
+				78E16BBC169F06D700D99D1F /* human_town3.spm in Resources */,
+				78E16BBD169F06D700D99D1F /* human_town4.spm in Resources */,
+				78E16BBE169F06D700D99D1F /* human_town5.spm in Resources */,
+				78E16BBF169F06D700D99D1F /* human_town6.spm in Resources */,
+				78E16BC0169F06D700D99D1F /* human_town7.spm in Resources */,
+				78E1772016A216D400D99D1F /* Druid.spm in Resources */,
+				783487D016A3DC5F00AF66C9 /* glew32.dll in Resources */,
+				783487D116A3DC5F00AF66C9 /* glew32mx.dll in Resources */,
+				783487D216A3DC5F00AF66C9 /* GLFW.dll in Resources */,
+				783487D316A3DC5F00AF66C9 /* glu32.dll in Resources */,
+				783487D416A3DC5F00AF66C9 /* glut32.dll in Resources */,
+				783487F016A3DC5F00AF66C9 /* libenet.la in Resources */,
+				783487F816A3DC5F00AF66C9 /* advWater.fs in Resources */,
+				783487F916A3DC5F00AF66C9 /* advWater.vs in Resources */,
+				783487FA16A3DC5F00AF66C9 /* clouds.fs in Resources */,
+				783487FB16A3DC5F00AF66C9 /* clouds.vs in Resources */,
+				783487FC16A3DC5F00AF66C9 /* model.fs in Resources */,
+				783487FD16A3DC5F00AF66C9 /* model.vs in Resources */,
+				783487FE16A3DC5F00AF66C9 /* modelA.fs in Resources */,
+				783487FF16A3DC5F00AF66C9 /* modelA.vs in Resources */,
+				7834880016A3DC5F00AF66C9 /* Sphere.fs in Resources */,
+				7834880116A3DC5F00AF66C9 /* Sphere.vs in Resources */,
+				7834880216A3DC5F00AF66C9 /* vertical.vs in Resources */,
+				7834880316A3DC5F00AF66C9 /* simple.fs in Resources */,
+				7834880416A3DC5F00AF66C9 /* simple.vs in Resources */,
+				7834880516A3DC5F00AF66C9 /* sky.fs in Resources */,
+				7834880616A3DC5F00AF66C9 /* sky.vs in Resources */,
+				7834880716A3DC5F00AF66C9 /* Sprite.fs in Resources */,
+				7834880816A3DC5F00AF66C9 /* Sprite.vs in Resources */,
+				7834880916A3DC5F00AF66C9 /* terrain_grid.fs in Resources */,
+				7834880A16A3DC5F00AF66C9 /* terrain_grid.vs in Resources */,
+				7834880B16A3DC5F00AF66C9 /* terrain_tex.fs in Resources */,
+				7834880C16A3DC5F00AF66C9 /* terrain_tex.vs in Resources */,
+				7834880D16A3DC5F00AF66C9 /* water.fs in Resources */,
+				7834880E16A3DC5F00AF66C9 /* water.vs in Resources */,
+				78E61F6416AD04C500EBE712 /* rock1.spm in Resources */,
+				78E61F6516AD04C500EBE712 /* ruins.spm in Resources */,
+				7888723316B6DF870033DD03 /* bridge.spm in Resources */,
+				7888762C16BC29620033DD03 /* powersong.spm in Resources */,
+				788876D116BD79FB0033DD03 /* speedsong.spm in Resources */,
+				788876FF16BD7D480033DD03 /* ring_particle.tga in Resources */,
+				7888771F16BD8E810033DD03 /* billboard.fs in Resources */,
+				7888772016BD8E810033DD03 /* billboard.vs in Resources */,
+				7888789816BDF5E60033DD03 /* red_ring.tga in Resources */,
+				78887A3C16BE41150033DD03 /* stunspell.tga in Resources */,
+				78887AA016BE46DF0033DD03 /* mezspell.tga in Resources */,
+				78887EC116BEFCCD0033DD03 /* groupdefensespell.tga in Resources */,
+				78887EC216BEFCCD0033DD03 /* tauntspell.tga in Resources */,
+				78887F4616BF035A0033DD03 /* wingsspell.tga in Resources */,
+				78887FE016C00B800033DD03 /* blessingspell.tga in Resources */,
+				7888804716C0158E0033DD03 /* defensebuffSpell.tga in Resources */,
+				7888804816C0158E0033DD03 /* healchantSpell.tga in Resources */,
+				7888807616C0B50A0033DD03 /* ddspell.tga in Resources */,
+				788880A116C0BB940033DD03 /* bardmez.tga in Resources */,
+				788880A216C0BB940033DD03 /* bardstun.tga in Resources */,
+				788880D616C0C2680033DD03 /* firebolt.spm in Resources */,
+				788880D716C0C2680033DD03 /* icebolt.spm in Resources */,
+				7888814116C16B6E0033DD03 /* assassinspell.tga in Resources */,
+				7888814216C16B6E0033DD03 /* fire_masteryspell.tga in Resources */,
+				7888814316C16B6E0033DD03 /* frost_masteryspell.tga in Resources */,
+				7888814416C16B6E0033DD03 /* rockspell.tga in Resources */,
+				788881AE16C1720C0033DD03 /* infernospell.tga in Resources */,
+				788881EA16C20F970033DD03 /* icespell.tga in Resources */,
+				7888821A16C2177E0033DD03 /* lifetap.spm in Resources */,
+				7888827B16C21C960033DD03 /* tranfusespell.tga in Resources */,
+				788882C016C21FC70033DD03 /* HealCircle.tga in Resources */,
+				7888836116C2268C0033DD03 /* flowerspell.tga in Resources */,
+				7888836216C2268C0033DD03 /* naturespell.tga in Resources */,
+				7888836316C2268C0033DD03 /* tornsspell.tga in Resources */,
+				7888848816C236C60033DD03 /* cloud.tga in Resources */,
+				7888849F16C2B80D0033DD03 /* hurricanespell.tga in Resources */,
+				7888850C16C2BFEE0033DD03 /* brown_ring.tga in Resources */,
+				7888858416C376B50033DD03 /* rblastspell.tga in Resources */,
+				788885B916C37A650033DD03 /* holyswordspell.tga in Resources */,
+				7888864616C4C0DA0033DD03 /* Paladin.spm in Resources */,
+				78888A6F16C764260033DD03 /* BardAttack.spm in Resources */,
+				78888A7016C764260033DD03 /* DruidAttack.spm in Resources */,
+				78888A7116C764260033DD03 /* PallyAttack.spm in Resources */,
+				78888A7216C764260033DD03 /* WizardAttack.spm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.cpp in Sources */,
+				783A0CBD1503D78400A2272F /* game.cpp in Sources */,
+				78C7435815AA04FD0049BBF1 /* CharacterScreen.cpp in Sources */,
+				78C7436B15AA08390049BBF1 /* NewCharacterScreen.cpp in Sources */,
+				78C744F515AA74E80049BBF1 /* PlayScreen.cpp in Sources */,
+				78EF77D4166DA4E6003AF90D /* PacketManager.cpp in Sources */,
+				78EF7823166DAFA2003AF90D /* ProcessPackets.cpp in Sources */,
+				78EF7A49166E4F9B003AF90D /* Player.cpp in Sources */,
+				78EF7B08166FCBF6003AF90D /* Buff.cpp in Sources */,
+				78EF7B0B166FCC23003AF90D /* Spell.cpp in Sources */,
+				78E14E62168CAF1D00D99D1F /* inventory.cpp in Sources */,
+				78E14E73168CB2BD00D99D1F /* item.cpp in Sources */,
+				78E15397168DDCB000D99D1F /* equip.cpp in Sources */,
+				78E1574A168F24BA00D99D1F /* vitals.cpp in Sources */,
+				78E15834168F946D00D99D1F /* targeting.cpp in Sources */,
+				78E15900168FFBEA00D99D1F /* Enemy.cpp in Sources */,
+				78E161561698960F00D99D1F /* emitters.cpp in Sources */,
+				783487CF16A3DC5F00AF66C9 /* app.cpp in Sources */,
+				783487D516A3DC5F00AF66C9 /* blank.cpp in Sources */,
+				783487D616A3DC5F00AF66C9 /* Camera.cpp in Sources */,
+				783487D716A3DC5F00AF66C9 /* Database.cpp in Sources */,
+				783487D816A3DC5F00AF66C9 /* sqlite3.c in Sources */,
+				783487D916A3DC5F00AF66C9 /* DayNight.cpp in Sources */,
+				783487DA16A3DC5F00AF66C9 /* font.cpp in Sources */,
+				783487DB16A3DC5F00AF66C9 /* Frustum.cpp in Sources */,
+				783487DC16A3DC5F00AF66C9 /* UIBar.cpp in Sources */,
+				783487DD16A3DC5F00AF66C9 /* UIButton.cpp in Sources */,
+				783487DE16A3DC5F00AF66C9 /* UICanvas.cpp in Sources */,
+				783487DF16A3DC5F00AF66C9 /* UICheckbox.cpp in Sources */,
+				783487E016A3DC5F00AF66C9 /* UIImage.cpp in Sources */,
+				783487E116A3DC5F00AF66C9 /* UILabel.cpp in Sources */,
+				783487E216A3DC5F00AF66C9 /* UIListbox.cpp in Sources */,
+				783487E316A3DC5F00AF66C9 /* UISlider.cpp in Sources */,
+				783487E416A3DC5F00AF66C9 /* UIStepSlider.cpp in Sources */,
+				783487E516A3DC5F00AF66C9 /* UITextbox.cpp in Sources */,
+				783487E616A3DC5F00AF66C9 /* UIWidget.cpp in Sources */,
+				783487E716A3DC5F00AF66C9 /* UIWindow.cpp in Sources */,
+				783487F316A3DC5F00AF66C9 /* math3d.cpp in Sources */,
+				783487F416A3DC5F00AF66C9 /* Network.cpp in Sources */,
+				783487F516A3DC5F00AF66C9 /* particle_system.cpp in Sources */,
+				783487F616A3DC5F00AF66C9 /* quadterrain.cpp in Sources */,
+				783487F716A3DC5F00AF66C9 /* shader.cpp in Sources */,
+				7834880F16A3DC5F00AF66C9 /* skyplane.cpp in Sources */,
+				7834881016A3DC5F00AF66C9 /* SPEntity.cpp in Sources */,
+				7834881116A3DC5F00AF66C9 /* spMesh.cpp in Sources */,
+				7834881216A3DC5F00AF66C9 /* Sprite.cpp in Sources */,
+				7834881316A3DC5F00AF66C9 /* terrain.cpp in Sources */,
+				7834881416A3DC5F00AF66C9 /* texture.cpp in Sources */,
+				7834881516A3DC5F00AF66C9 /* util.cpp in Sources */,
+				7834881616A3DC5F00AF66C9 /* Water.cpp in Sources */,
+				7888770816BD804A0033DD03 /* billboard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LostRealms_Prefix.pch;
+				INFOPLIST_FILE = "LostRealms-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/glfw-2.7.2/lib/cocoa\"",
+					"\"$(SRCROOT)/../../scotronics\"",
+					"\"$(SRCROOT)/../../GLTools\"",
+					"\"$(SRCROOT)/../scotronics/mac_lib\"",
+					"\"$(SRCROOT)/../scotronics/lib\"",
+				);
+				PRODUCT_NAME = LostRealms;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LostRealms_Prefix.pch;
+				INFOPLIST_FILE = "LostRealms-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/glfw-2.7.2/lib/cocoa\"",
+					"\"$(SRCROOT)/../../scotronics\"",
+					"\"$(SRCROOT)/../../GLTools\"",
+					"\"$(SRCROOT)/../scotronics/mac_lib\"",
+					"\"$(SRCROOT)/../scotronics/lib\"",
+				);
+				PRODUCT_NAME = LostRealms;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/scottscaccianoce/GameDevelopment/scotronics/mac_include;
+				LIBRARY_SEARCH_PATHS = /Users/scottscaccianoce/GameDevelopment/scotronics/mac_lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					/Users/scottscaccianoce/GameDevelopment/scotronics/mac_lib/libenet.a,
+					/Users/scottscaccianoce/GameDevelopment/scotronics/mac_lib/libglfw.a,
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/scottscaccianoce/GameDevelopment/scotronics/mac_include;
+				LIBRARY_SEARCH_PATHS = /Users/scottscaccianoce/GameDevelopment/scotronics/mac_lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					/Users/scottscaccianoce/GameDevelopment/scotronics/mac_lib/libenet.a,
+					/Users/scottscaccianoce/GameDevelopment/scotronics/mac_lib/libglfw.a,
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LostRealms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LostRealms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

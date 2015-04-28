@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/scotronics/!svn/ver/6/trunk/MapEditor
+END
+game.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/game.h
+END
+world.quad
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/world.quad
+END
+world.icns
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/world.icns
+END
+Enemy.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/Enemy.h
+END
+Picture clipping.pictClipping
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/Picture%20clipping.pictClipping
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/main.cpp
+END
+MapEditor-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/MapEditor-Info.plist
+END
+MapEditor_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/MapEditor_Prefix.pch
+END
+game.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/game.cpp
+END
+game.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/game.sqlite3
+END
+Enemy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/scotronics/!svn/ver/5/trunk/MapEditor/Enemy.cpp
+END

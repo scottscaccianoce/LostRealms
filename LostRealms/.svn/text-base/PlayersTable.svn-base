@@ -1,0 +1,42 @@
+CREATE TABLE Players (
+ player_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ class INTEGER,
+ level INTEGER,
+ exp INTEGER,
+ exp_max INTEGER,
+ posx NUMBER,
+ posy NUMBER,
+ posz NUMBER,
+ school1 text,
+ school2 text,
+ hp INTEGER,
+ mp INTEGER,
+ name TEXT
+);
+
+CREATE TABLE Inventory (
+ inventory_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ player_id INTEGER,
+ item_id INTEGER
+);
+
+CREATE TABLE Equiped (
+ player_id INTEGER,
+ item_id INTEGER,
+ position INTEGER,
+ PRIMARY KEY(player_id,position)
+);
+
+INSERT INTO Inventory (player_id,item_id) VALUES (1,1);
+INSERT INTO Inventory (player_id,item_id) VALUES (1,1);
+INSERT INTO Inventory (player_id,item_id) VALUES (1,2);
+INSERT INTO Inventory (player_id,item_id) VALUES (1,3);
+INSERT INTO Inventory (player_id,item_id) VALUES (1,4);
+
+
+CREATE TABLE Spellbar (
+  player_id INTEGER,
+  spell_id INTEGER,
+  position INTEGER,
+  PRIMARY KEY(player_id, position)
+);

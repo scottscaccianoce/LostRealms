@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/scotronics/!svn/ver/9/trunk/LostRealms
+END
+emitters.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/scotronics/!svn/ver/18/trunk/LostRealms/emitters.h
+END
+world.icns
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/world.icns
+END
+vitals.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/vitals.cpp
+END
+item.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/item.h
+END
+PlayScreen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/PlayScreen.cpp
+END
+PlayersTable
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/PlayersTable
+END
+PacketManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/PacketManager.h
+END
+game.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/game.cpp
+END
+Enemy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/Enemy.cpp
+END
+equip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/9/trunk/LostRealms/equip.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/scotronics/!svn/ver/9/trunk/LostRealms/main.cpp
+END
+Spell.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/scotronics/!svn/ver/13/trunk/LostRealms/Spell.h
+END
+Buff.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scotronics/!svn/ver/18/trunk/LostRealms/Buff.h
+END
+CharacterScreen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/CharacterScreen.cpp
+END
+emitters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/emitters.cpp
+END
+Player.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/Player.cpp
+END
+item.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/item.cpp
+END
+player.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/player.h
+END
+PacketManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/PacketManager.cpp
+END
+Picture clipping.pictClipping
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/Picture%20clipping.pictClipping
+END
+NewCharacterScreen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/NewCharacterScreen.cpp
+END
+game.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/game.sqlite3
+END
+game.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/game.h
+END
+Spell.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/Spell.cpp
+END
+players.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/players.sqlite3
+END
+Buff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/18/trunk/LostRealms/Buff.cpp
+END
+Enemy.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/scotronics/!svn/ver/13/trunk/LostRealms/Enemy.h
+END
+Game tables
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/Game%20tables
+END
+oldmap.quad
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/oldmap.quad
+END
+targeting.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scotronics/!svn/ver/12/trunk/LostRealms/targeting.cpp
+END
+map.quad
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scotronics/!svn/ver/10/trunk/LostRealms/map.quad
+END
+LostRealms-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/LostRealms-Info.plist
+END
+ProcessPackets.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/scotronics/!svn/ver/19/trunk/LostRealms/ProcessPackets.cpp
+END
+LostRealms_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/LostRealms_Prefix.pch
+END
+inventory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/scotronics/!svn/ver/6/trunk/LostRealms/inventory.cpp
+END

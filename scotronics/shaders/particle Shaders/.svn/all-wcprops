@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/particle%20Shaders
+END
+vertical.vs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/scotronics/!svn/ver/2/trunk/scotronics/shaders/particle%20Shaders/vertical.vs
+END
+Sphere.fs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/scotronics/!svn/ver/20/trunk/scotronics/shaders/particle%20Shaders/Sphere.fs
+END
+Sphere.vs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/scotronics/!svn/ver/20/trunk/scotronics/shaders/particle%20Shaders/Sphere.vs
+END

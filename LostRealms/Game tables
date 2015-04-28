@@ -1,0 +1,238 @@
+CREATE TABLE Meshes (
+ mesh_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ filename TEXT
+ 
+);
+
+CREATE TABLE Classes (
+ class_id INTEGER,
+ name TEXT,
+ role TEXT, 
+ mesh_id INTEGER,
+ attack_mesh_id INTEGER
+);
+
+
+
+CREATE TABLE Enemies (
+ mesh_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ filename TEXT,
+ attack_filename TEXT,
+ name TEXT,
+ level INTEGER,
+ hp INTEGER,
+ attack  INTEGER,
+ hostile INTEGER,
+ baf_radius NUMBER,
+ respawn INTEGER,
+ exp INTEGER
+);
+
+INSERT INTO Enemies (filename,attack_filename,name) values ("Brown_bear.spm","Brown_bear_attack.spm","Brown Bear");
+
+CREATE TABLE Classes (
+ class_id INTEGER,
+ name TEXT,
+ role TEXT
+);
+
+CREATE TABLE Spells (
+ spell_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ school_id INTEGER,
+  school TEXT,
+ class_id INTEGER,
+ name TEXT,
+ desc TEXT,
+ filename TEXT,
+ attack_value NUMBER,
+ range  NUMBER,
+ cost  NUMBER,
+ cast_time  NUMBER,
+ recast_time  NUMBER,
+ spelltype INTEGER,
+ duration INTEGER,
+ tick INTEGER DEFAULT  0,
+ forever INTEGER DEFAULT  0,
+ passive INTEGER DEFAULT 0
+);
+
+-- spell types
+--1 target damage
+--2 self
+--3 target ally 
+--4 CC
+
+--
+-- BARD ----------------------
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(1,1,"Songs",3,"Power Song","power.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(2,1,"Songs",3,"Speed Song","speed.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(3,1,"Songs",3,"Bladeturn Song","bladeturn.tga",3);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(4,2,"Shouts",3,"Virbratto","dd.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(5,2,"Shouts",3,"Stunning Shout","stun.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(6,2,"Shouts",3,"Mez","mez.tga",1);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(7,3,"Swordplay",3,"Assassin","assassin.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(8,3,"Swordplay",3,"Strike","strike.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(9,3,"Swordplay",3,"Blow","blow.tga",1);
+
+UPDATE Spells set range = 20, cost = 2, cast_time = 3, recast_time = 5,  attack_value = 2, duration = 30, tick = 4, forever = 1 WHERE spell_id = 1;
+UPDATE Spells set range = 20, cost = 2, cast_time = 3, recast_time = 5,  attack_value = 2, duration = 10, forever = 1 WHERE spell_id = 2;
+UPDATE Spells set range = 20, cost = 2, cast_time = 3, recast_time = 5,  attack_value = 2, duration = 10, forever = 1 WHERE spell_id = 3;
+
+UPDATE Spells set range = 10, cost = 8, cast_time = 0, recast_time = 10,  attack_value = 2  WHERE spell_id = 4;
+UPDATE Spells set range = 10, cost = 6, cast_time = 0, recast_time = 30,  attack_value = 0, duration = 8 WHERE spell_id = 5;
+UPDATE Spells set range = 20, cost = 6, cast_time = 0, recast_time = 60,  attack_value = 0, duration = 30 WHERE spell_id = 6;
+
+UPDATE Spells set range = -1, cost = 2, cast_time = 3, recast_time = 5,  attack_value = 5, passive = 1 WHERE spell_id = 7;
+UPDATE Spells set range = 2, cost = 8, cast_time = 0, recast_time = 15,  attack_value = 1 WHERE spell_id = 8;
+UPDATE Spells set range = 2, cost = 6, cast_time = 3, recast_time = 0,  attack_value = 4 WHERE spell_id = 9;
+
+
+
+-- Paladin ----------------------
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(10,1,"Tactics",1,"Taunt","taunt.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(11,1,"Tactics",1,"Group Defense","group_defense.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(12,1,"Tactics",1,"Rez","rez.tga",2);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(13,2,"Divinity",1,"Holy Sword","stun_strike.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(14,2,"Divinity",1,"Holy Armor","defense_buff.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(15,2,"Divinity",1,"Heal Chant","heal_chant.tga",3);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(16,3,"Crusader",1,"Swipe","mace_Attack.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(17,3,"Crusader",1,"Angelic Power","self_haste.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(18,3,"Crusader",1,"Blessing","holy_power.tga",3);
+
+UPDATE Spells set range = 20, cost = 6, cast_time = 0, recast_time = 10,  attack_value = 8 WHERE spell_id = 10;
+UPDATE Spells set range = 20, cost = 2, cast_time = 3, recast_time = 0,  attack_value = 3, passive = 1 WHERE spell_id = 11;
+UPDATE Spells set range = 10, cost = 2, cast_time = 8, recast_time = 0,  attack_value = 0 WHERE spell_id = 12;
+
+UPDATE Spells set range = -1, cost = 7, cast_time = 0, recast_time = 20,  attack_value = 5, duration = 15 WHERE spell_id = 13;
+UPDATE Spells set range = -1, cost = 7, cast_time = 0, recast_time = 20,  attack_value = 5, duration = 15 WHERE spell_id = 14;
+UPDATE Spells set range = -1, cost = 7, cast_time = 0, recast_time = 20,  attack_value = 1, duration = 15, tick = 3 WHERE spell_id = 15;
+
+UPDATE Spells set range = 2, cost = 8, cast_time = 0, recast_time = 10,  attack_value = 2, duration = 1 WHERE spell_id = 16;
+UPDATE Spells set range = -1, cost = 8, cast_time = 0, recast_time = 15,  attack_value = 1, duration = 10 WHERE spell_id = 17;
+UPDATE Spells set range = -1, cost = 2, cast_time = 3, recast_time = 5,  attack_value = 5, passive =1 WHERE spell_id = 18;
+
+
+-- wizard ----------------------
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(19,1,"Fire",2,"Firebolt","firebolt.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(20,1,"Fire",2,"Inferno","Inferno.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(21,1,"Fire",2,"Fire Mastery","fire_mastery.tga",3);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(22,2,"Ice",2,"Frostbolt","ice_bolt.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(23,2,"Ice",2,"Freeze","freeze.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(24,2,"Ice",2,"Frost Mastery","frost_mastery.tga",3);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(25,3,"Earth",2,"Avalanche","life_steal.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(26,3,"Earth",2,"Rock Armor","rock_armor.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(27,3,"Earth",2,"Earth Mastery","transfuse.tga",3);
+
+UPDATE Spells set range = 25, cost = 5, cast_time = 5, recast_time = 0,  attack_value = 4 WHERE spell_id = 19;
+UPDATE Spells set range = 25, cost = 9, cast_time = 0, recast_time = 15,  attack_value = 2 WHERE spell_id = 20;
+UPDATE Spells set range = -1, cost = 2, cast_time = 3, recast_time = 1,  attack_value = 5, passive = 1 WHERE spell_id = 21;
+
+UPDATE Spells set range = 25, cost = 7, cast_time = 3, recast_time = 0,  attack_value = 2  WHERE spell_id = 22;
+UPDATE Spells set range = 25, cost = 9, cast_time = 0, recast_time = 60,  attack_value = 0, duration = 20 WHERE spell_id = 23;
+UPDATE Spells set range = 20, cost = 2, cast_time = 3, recast_time = 1,  attack_value = 3, passive = 1 WHERE spell_id = 24;
+
+UPDATE Spells set range = 25, cost = 10, cast_time = 0, recast_time = 4,  attack_value = 1 WHERE spell_id = 25;
+UPDATE Spells set range = -1, cost = 2, cast_time = 3, recast_time = 1,  attack_value = 5, passive = 1 WHERE spell_id = 26;
+UPDATE Spells set range = -1, cost = 2, cast_time = 3, recast_time = 0,  attack_value = 1, passive = 1 WHERE spell_id = 27;
+
+
+
+-- druid ----------------------
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(28,1,"Nature",4,"Heal","heal.tga",2);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(29,1,"Nature",4,"Regrowth","group_heal.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(30,1,"Nature",4,"Nature","nature.tga",3);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(31,2,"Air",4,"Healing Rain","healing_rain.tga",2);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(32,2,"Air",4,"Twister","twister.tga",1);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(33,2,"Air",4,"Lighting","lighting.tga",1);
+
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(34,3,"Growth",4,"Pine","wildflower.tga",3);
+INSERT INTO SPells (spell_id,school_id, school,class_id,name,filename, spelltype) VALUES(35,3,"Growth",4,"Briathorn","torns.tga",3);
+INSERT INTO SPells (spell_id,school_id, school ,class_id,name,filename, spelltype) VALUES(36,3,"Growth",4,"Oak","vine.tga",3);
+
+
+UPDATE Spells set range = 25, cost = 5, cast_time = 3, recast_time = 0,  attack_value = 4 WHERE spell_id = 28;
+UPDATE Spells set range = 20, cost = 5, cast_time = 3, recast_time = 0,  attack_value = 2 WHERE spell_id = 29;
+UPDATE Spells set range = 20, cost = 2, cast_time = 5, recast_time = 1,  attack_value = 3, passive = 1 WHERE spell_id = 30;
+
+UPDATE Spells set range = 20, cost = 7, cast_time = 0, recast_time = 15,  attack_value = 1 WHERE spell_id = 31;
+UPDATE Spells set range = 15, cost = 5, cast_time = 3, recast_time = 0,  attack_value = 3 WHERE spell_id = 32;
+UPDATE Spells set range = 15, cost = 8, cast_time = 0, recast_time = 15,  attack_value = 2 WHERE spell_id = 33;
+
+UPDATE Spells set range = -1, cost = 8, cast_time = 0, recast_time = 30,  attack_value = 2, duration = 120, tick = 20 WHERE spell_id = 34;
+UPDATE Spells set range = -1, cost = 8, cast_time = 0, recast_time = 30,  attack_value = 2, duration = 120,tick = 5 WHERE spell_id = 35;
+UPDATE Spells set range = -1, cost = 8, cast_time = 0, recast_time = 15,  attack_value = 1, duration = 120,tick = 8 WHERE spell_id = 36;
+
+
+CREATE TABLE ItemsIcon (
+  item_icon_id  INTEGER PRIMARY KEY AUTOINCREMENT,
+  filename TEXT
+);
+
+
+INSERT INTO ItemsIcon (filename) VALUES ("helmet.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("chest.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("hand.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("feet.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("legs.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("neck.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("ring.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("sword.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("staff.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("mace.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("druid_staff.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("beer.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("sheild.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("flower.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("tomb.tga");
+INSERT INTO ItemsIcon (filename) VALUES ("loot.tga");
+
+
+
+
+
+
+
+CREATE TABLE Items (
+ item_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ req_level INTEGER,
+ name TEXT,
+ sell_value INTEGER,
+ icon_id INTEGER,
+ position INTEGER,
+ attack NUMBER,
+ class_id INTEGER,
+ int INTEGER,
+ str INTEGER,
+ agi INTEGER,
+ vit INTEGER,
+ wis INTEGER,
+ def  INTEGER
+);
+
+
+INSERT INTO Items (req_level, name, sell_value,icon_id, position,int,str,agi,vit,wis,def) VALUES(1,"beer",10,12,9,1,2,0,0,0,6);
+INSERT INTO Items (req_level, name, sell_value,icon_id, position,int,str,agi,vit,wis,def) VALUES(1,"Helmet",100,1,1,1,2,3,0,0,0);
+INSERT INTO Items (req_level, name, sell_value,icon_id, position,int,str,agi,vit,wis,def) VALUES(1,"Taterd Chest",200,2,2,0,2,0,0,0,0);
+INSERT INTO Items (req_level, name, sell_value,icon_id, position,int,str,agi,vit,wis,def) VALUES(1,"Tatered Pants",300,5,4,0,0,0,0,0,0);
+
+
+CREATE TABLE Armors (
+ item_id INTEGER PRIMARY KEY,
+ position TEXT,
+);
+
+CREATE TABLE Weapons (
+ item_id INTEGER PRIMARY KEY,
+ class_id,
+ position TEXT,
+ attack NUMBER,
+);
+
+CREATE Table Armor
